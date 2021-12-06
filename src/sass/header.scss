@@ -1,0 +1,9 @@
+.nav-bar {
+    &__box {
+        &__menu-links {
+            &_nav-bar-active p {
+                color: #4299E1;
+            }
+        }
+    }
+}

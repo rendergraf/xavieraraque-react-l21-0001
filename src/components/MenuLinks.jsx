@@ -1,37 +1,37 @@
-import React, { useState, useEffect } from "react";
 import { Box, Stack, Button } from "@chakra-ui/react";
 import { ScrollFunction } from "./Header"
 import MenuItem from "./MenuItem";
 
 
 
-export default function MenuLinks({ isOpen }) {
+export default function MenuLinks({ toggle, isOpen }) {
     const scroll = ScrollFunction();
     return (
         <Box
+            className="nav-bar__box"
             display={{ base: isOpen ? "block" : "none", md: "block" }}
             flexBasis={{ base: "100%", md: "auto" }}
         >
             <Stack
+                className='nav-bar__box__menu-links'
                 spacing={8}
                 align="center"
-                textTransform="uppercase"
-                fontWeight="bold"
                 justify={["center", "space-between", "flex-end", "flex-end"]}
                 direction={["column", "row", "row", "row"]}
                 pt={[4, 4, 0, 0]}
             >
-                <MenuItem to="/#home">Home</MenuItem>
-                <MenuItem to="/#about">About </MenuItem>
-                <MenuItem to="/#services">Services </MenuItem>
-                <MenuItem to="/#portfolio">Portfolio </MenuItem>
-                <MenuItem to="/#testimonials">Testimonials </MenuItem>
-                <MenuItem to="/#contact" isLast>
+                <MenuItem toggle={toggle} to="home">Home</MenuItem>
+                <MenuItem toggle={toggle} to="about">About </MenuItem>
+                <MenuItem toggle={toggle} to="services">Services </MenuItem>
+                <MenuItem toggle={toggle} to="portfolio">Portfolio </MenuItem>
+                <MenuItem toggle={toggle} to="testimonials">Testimonials </MenuItem>
+                <MenuItem to="contact" isLast>
                     <Button
+                        onClick={toggle}
                         size="sm"
-                        rounded="md"
-                        color={["primary.500", "primary.500", "white"]}
-                        bg={scroll ? ["white", "white", "gray"] : ["white", "white", "cyan.400"]}
+                        borderRadius='0px'
+                        color={scroll ? ["white"] : ["cyan.400", "white"]}
+                        bg={scroll ? ["cyan.400"] : ["white", "cyan.400"]}
                         _hover={{
                             bg: ["primary.100", "primary.100", "cyan.400"]
                         }}

@@ -3,6 +3,7 @@ import { Flex } from "@chakra-ui/react";
 import MenuToggle from "./MenuToggle";
 import MenuLinks from "./MenuLinks";
 import Logo from "./Logo";
+import '../sass/header.scss'
 
 export function ScrollFunction() {
     const [scroll, setScroll] = useState(false);
@@ -16,24 +17,34 @@ export function ScrollFunction() {
     return scroll;
 }
 
-const NavBarContainer = ({ children, ...props }) => {
+const NavBarContainer = ({ children, isOpen, ...props }) => {
+
     const scroll = ScrollFunction();
+
+  console.log(isOpen)
 
     return (
         <Flex
-            transition="background-color 0.5s ease-in-out"
+            className="nav-bar"
+            transition="all 0.5s ease-in-out"
+            zIndex="2"
             pos="fixed"
             top="0"
-            id="home"
             as="nav"
             align="center"
             justify="space-between"
             wrap="wrap"
             w="100%"
             mb={8}
-            p={8}
-            bg={scroll ? ["primary.500", "primary.500", "white"] : ["primary.500", "primary.500", "transparent"] }
-            color={scroll ? ["white", "white", "gray.800"] : ["white", "white", "white"] }
+            p={scroll ? ["15px 32px"] : ["32px 32px"] }
+
+            bg={ isOpen ? (scroll ? ["white"] : ["cyan.400"]) : (scroll ? ["white"] : ["transparent"])}
+
+            /* bg={scroll ? ["white"] : ["transparent"] } */
+
+
+            color={scroll ? ["gray.800"] : ["white"] }
+            boxShadow={scroll ? ['lg'] : [null] }
             {...props}
         >
             {children}
@@ -48,10 +59,10 @@ export default function NavBar(props) {
     const scroll = ScrollFunction();
 
     return (
-        <NavBarContainer {...props}>
-            <Logo w="150px" color={scroll ? ["white", "white", "gray.800"] : ["white", "white", "white"] } />
-            <MenuToggle toggle={toggle} isOpen={isOpen} />
-            <MenuLinks isOpen={isOpen} />
+        <NavBarContainer isOpen={isOpen} { ...props}>
+            <Logo w="150px" color={scroll ? ["gray.800"] : ["white"] } />
+            <MenuToggle toggle={toggle} isOpen={isOpen} scroll={scroll} />
+            <MenuLinks toggle={toggle} isOpen={isOpen} />
         </NavBarContainer>
     );
 };
