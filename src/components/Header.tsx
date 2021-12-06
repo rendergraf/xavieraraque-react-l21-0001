@@ -17,7 +17,13 @@ export function ScrollFunction() {
     return scroll;
 }
 
-const NavBarContainer = ({ children, isOpen, mobile, ...props }) => {
+interface NavBarContainerProps {
+	children: object;
+	isOpen: object;
+	mobile: boolean;
+}
+
+const NavBarContainer = ({ children, isOpen, mobile, ...props }: NavBarContainerProps) => {
     const scroll = ScrollFunction();
 
     return (
@@ -49,14 +55,11 @@ const NavBarContainer = ({ children, isOpen, mobile, ...props }) => {
     );
 };
 
-export default function Header(props) {
+export default function Header(props:any) {
 /*     const isLarger = useMediaQuery('(min-width: 48em)') */
     const [isOpen, setIsOpen] = useState(false);
-
     const toggle = () => setIsOpen(!isOpen);
-
     const mobile = useBreakpointValue({ base: true, md: false })
-
     const scroll = ScrollFunction();
 
     return (

@@ -3,12 +3,18 @@ import { Text } from "@chakra-ui/react";
 import { Link } from "react-scroll";
 import { ScrollFunction } from "./Header"
 
-export default function MenuItem({ toggle, children, isLast, to = "/", ...rest }) {
+interface MenuItemProps {
+	toggle: any;
+    children: any;
+    to: string;
+}
+
+export default function MenuItem({ toggle, children, to = "/", ...rest }: MenuItemProps) {
     const scroll = ScrollFunction();
     return (
         <Link
             onClick={toggle}
-            activeClass={scroll ? "nav-bar__box__menu-links_nav-bar-active" : null }
+            activeClass={scroll ? "nav-bar__box__menu-links_nav-bar-active" : '' }
             to={to}
             spy={true}
             smooth={true}

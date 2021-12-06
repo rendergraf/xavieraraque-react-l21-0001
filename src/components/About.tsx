@@ -3,14 +3,13 @@ import { Container, Stack, Grid, GridItem, Heading, Text, Tooltip, Progress, Sim
 import Profile from './Profile';
 import "../sass/style.scss";
 
-    
 
-export function About() {  
+export default function About() {  
     return (
             <Container id="about" maxW='container.lg' py={20}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Stack spacing={4}>
-                        <Profile id='about' />
+                        <Profile  />
                     </Stack>
                     <Stack
                         p={['1', '2', '10, 0']}

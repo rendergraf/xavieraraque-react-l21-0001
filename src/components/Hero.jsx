@@ -47,8 +47,7 @@ export default function Hero() {
                 align="center"
                 bgGradient='linear(to-r, orange.100, cyan.100, purple.200)'
                 bgClip='text'
-                fontWeight='extrabold'
-                
+                fontWeight='extrabold'                
                 >
                     <Typical
                         steps={['Hello my name is Xavier Araque ', 1500, 'I´am...', 1500, 'Senior Developer ', 1500, 'Senior Developer React', 1500, 'Senior Developer ', 1500, 'Senior Developer Chakra UI', 1500]}
