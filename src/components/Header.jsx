@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Flex } from "@chakra-ui/react";
+import { Flex, useMediaQuery, useBreakpointValue } from "@chakra-ui/react";
 import MenuToggle from "./MenuToggle";
 import MenuLinks from "./MenuLinks";
 import Logo from "./Logo";
@@ -17,11 +17,9 @@ export function ScrollFunction() {
     return scroll;
 }
 
-const NavBarContainer = ({ children, isOpen, ...props }) => {
+const NavBarContainer = ({ children, isOpen, mobile, ...props }) => {
 
     const scroll = ScrollFunction();
-
-  console.log(isOpen)
 
     return (
         <Flex
@@ -36,15 +34,15 @@ const NavBarContainer = ({ children, isOpen, ...props }) => {
             wrap="wrap"
             w="100%"
             mb={8}
-            p={scroll ? ["15px 32px"] : ["32px 32px"] }
-
-            bg={ isOpen ? (scroll ? ["white"] : ["cyan.400"]) : (scroll ? ["white"] : ["transparent"])}
-
-            /* bg={scroll ? ["white"] : ["transparent"] } */
-
-
-            color={scroll ? ["gray.800"] : ["white"] }
-            boxShadow={scroll ? ['lg'] : [null] }
+            p={scroll ? ["15px 32px"] : ["32px 32px"]}
+            bg={
+                mobile ? (isOpen ? (scroll ? ["white"] : ["cyan.400"]) :
+                (scroll ? ["white"] : ["transparent"]) ) :
+                (isOpen ? (scroll ? ["white"] : ["transparent"]) :
+                (scroll ? ["white"] : ["transparent"]) )
+            }
+            color={scroll ? ["gray.800"] : ["white"]}
+            boxShadow={scroll ? ['lg'] : [null]}
             {...props}
         >
             {children}
@@ -53,14 +51,18 @@ const NavBarContainer = ({ children, isOpen, ...props }) => {
 };
 
 export default function NavBar(props) {
+    const isLarger = useMediaQuery('(min-width: 48em)')
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    const mobile = useBreakpointValue({ base: true, md: false })
+
     const scroll = ScrollFunction();
 
     return (
-        <NavBarContainer isOpen={isOpen} { ...props}>
-            <Logo w="150px" color={scroll ? ["gray.800"] : ["white"] } />
+        <NavBarContainer mobile={mobile} isOpen={isOpen} {...props}>
+            <Logo w="150px" color={scroll ? ["gray.800"] : ["white"]} />
             <MenuToggle toggle={toggle} isOpen={isOpen} scroll={scroll} />
             <MenuLinks toggle={toggle} isOpen={isOpen} />
         </NavBarContainer>
