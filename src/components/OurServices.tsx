@@ -9,11 +9,9 @@ import {
 	StackDivider,
 	Icon,
 	useColorModeValue,
-	Button,
 	Box,
 	Spacer,
-	Collapse,
-	Fade, ScaleFade, Slide, SlideFade
+	Collapse
 } from '@chakra-ui/react';
 import {
 	IoLogoReact, IoCaretDown, IoCaretUp

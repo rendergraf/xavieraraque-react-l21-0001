@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { Flex, useMediaQuery, useBreakpointValue } from "@chakra-ui/react";
+import { useState, useEffect } from "react";
+import { Flex, /* useMediaQuery, */ useBreakpointValue } from "@chakra-ui/react";
 import MenuToggle from "./MenuToggle";
 import MenuLinks from "./MenuLinks";
 import Logo from "./Logo";
@@ -10,7 +10,7 @@ export function ScrollFunction() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 96);
+            setScroll(window.scrollY > 72);
         });
     }, []);
 
@@ -18,7 +18,6 @@ export function ScrollFunction() {
 }
 
 const NavBarContainer = ({ children, isOpen, mobile, ...props }) => {
-
     const scroll = ScrollFunction();
 
     return (
@@ -50,8 +49,8 @@ const NavBarContainer = ({ children, isOpen, mobile, ...props }) => {
     );
 };
 
-export default function NavBar(props) {
-    const isLarger = useMediaQuery('(min-width: 48em)')
+export default function Header(props) {
+/*     const isLarger = useMediaQuery('(min-width: 48em)') */
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);

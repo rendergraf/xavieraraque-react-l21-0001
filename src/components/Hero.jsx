@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Heading, Text, Center, Link, Button } from "@chakra-ui/react"
 import Particles from "react-tsparticles"
 import jsonParticles from '../utils/particles.json'
@@ -6,12 +5,9 @@ import Typical from 'react-typical'
 import "../sass/style.scss";
 
 
-export default function Slider() {
-    const particlesInit = (main) => {
-      };
-    const particlesLoaded = (container) => {
-
-    };
+export default function Hero() {
+    const particlesInit = null;
+    const particlesLoaded = null;
 
     return (
         <Center
