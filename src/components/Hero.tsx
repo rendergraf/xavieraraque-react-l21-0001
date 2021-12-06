@@ -1,13 +1,18 @@
 import { Container, Heading, Text, Center, Link, Button } from "@chakra-ui/react"
 import Particles from "react-tsparticles"
 import jsonParticles from '../utils/particles.json'
-import Typical from 'react-typical'
+import { ReactTypical as Typical } from '@deadcoder0904/react-typical'
+/* import Typical from 'react-typical' */
 import "../sass/style.scss";
 
 
-export default function Hero() {
-    const particlesInit = null;
-    const particlesLoaded = null;
+
+
+const Hero = () => {
+    const particlesInit = () => {};
+    const particlesLoaded = () => {};
+
+    let jsonP:object = jsonParticles;
 
     return (
         <Center
@@ -31,10 +36,10 @@ export default function Hero() {
         }}
         >
         <Particles
-        id="tsparticles"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={jsonParticles}
+            id="tsparticles"
+            init={particlesInit}
+            loaded={particlesLoaded}
+            options={jsonP}
         />
             <Container maxW='container.xl' zIndex="1">
                 <Text size='4xl' fontSize='30px' spacing={1} color='white' align="center">WELCOME TO MY WEBSITE</Text>
@@ -42,9 +47,7 @@ export default function Hero() {
                 as='h1' 
                 size='4xl' 
                 fontSize='43px' 
-                spacing={1} 
                 color='white' 
-                align="center"
                 bgGradient='linear(to-r, orange.100, cyan.100, purple.200)'
                 bgClip='text'
                 fontWeight='extrabold'                
@@ -84,3 +87,5 @@ export default function Hero() {
         </Center>
     )
 }
+
+export default Hero;

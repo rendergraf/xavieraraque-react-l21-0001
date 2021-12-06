@@ -1,7 +1,7 @@
 import React  from "react";
 import { Box } from "@chakra-ui/react";
 
-function MenuIcon(scroll) {
+function MenuIcon(scroll:any) {
     return (
         <svg
             width="24px"
@@ -15,7 +15,7 @@ function MenuIcon(scroll) {
     )
 }
 
-function CloseIcon(scroll) {
+function CloseIcon(scroll:any) {
     return (
         <svg width="24" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
         <title>Close</title>
@@ -27,7 +27,13 @@ function CloseIcon(scroll) {
     );
 }
 
-export default function MenuToggle({ toggle, isOpen, scroll }) {
+interface MenuToggleProps {
+    toggle: any;
+    isOpen: boolean;
+    scroll: boolean;
+}
+
+export default function MenuToggle({ toggle, isOpen, scroll }: MenuToggleProps) {
     return (
         <Box display={{ base: "block", md: "none" }} onClick={toggle}>
             {isOpen ? ( <> <CloseIcon scroll={scroll}/> </>) : ( <> <MenuIcon scroll={scroll}/>  </>)}
