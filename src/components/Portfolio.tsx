@@ -10,6 +10,7 @@ import hm03 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x15
 
 const settings = {
     dots: true,
+    lazyLoad: true,
     arrows: false,
     fade: false,
     infinite: true,
