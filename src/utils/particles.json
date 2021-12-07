@@ -94,7 +94,7 @@
               "value": "#000000"
             }
           },
-          "radius": 1000
+          "radius": 500
         },
         "shadow": {
           "color": {
@@ -296,7 +296,7 @@
         "acceleration": 9.81,
         "enable": false,
         "inverse": false,
-        "maxSpeed": 50
+        "maxSpeed": 20
       },
       "path": {
         "clamp": true,
@@ -327,7 +327,7 @@
       "straight": false,
       "trail": {
         "enable": false,
-        "length": 10,
+        "length": 5,
         "fillColor": {
           "value": "#000000"
         }
@@ -338,7 +338,7 @@
     "number": {
       "density": {
         "enable": true,
-        "area": 800,
+        "area": 1000,
         "factor": 1000
       },
       "limit": 0,
@@ -373,7 +373,7 @@
           "enable": false,
           "minimumValue": 0
         },
-        "value": 45
+        "value": 5
       },
       "width": 1
     },
@@ -388,7 +388,7 @@
       "distance": 1,
       "duration": 1,
       "factor": 1,
-      "speed": 1
+      "speed": 0.5
     },
     "roll": {
       "darken": {
@@ -401,7 +401,7 @@
         "value": 0
       },
       "mode": "vertical",
-      "speed": 25
+      "speed": 10
     },
     "rotate": {
       "random": {
@@ -439,7 +439,7 @@
       },
       "value": {
         "min": 0.1,
-        "max": 3
+        "max": 2
       },
       "animation": {
         "count": 0,
