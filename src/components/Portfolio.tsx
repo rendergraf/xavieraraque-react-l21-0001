@@ -11,7 +11,7 @@ import hm03 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x15
 const settings = {
     dots: true,
     arrows: false,
-    fade: true,
+    fade: false,
     infinite: true,
     autoplay: true,
     speed: 500,
@@ -28,8 +28,8 @@ export default function Portfolio() {
 
     // These are the breakpoints which changes the position of the
     // buttons as the screen size changes
-    const top = useBreakpointValue({ base: '90%', md: '50%' });
-    const side = useBreakpointValue({ base: '30%', md: '10px' });
+    const top = useBreakpointValue({ base: '310px', md: '93%' });
+    const side = useBreakpointValue({ base: '3px', md: '2%' });
 
     // These are the images used in the slide
     const cards = [
@@ -71,8 +71,8 @@ export default function Portfolio() {
                         {/* Left Icon */}
                         <IconButton
                             aria-label="left-arrow"
-                            colorScheme="gray"
-                            color="cyan.400"
+                            colorScheme="cyan"
+                            color="white"
                             borderRadius={0}
                             position="absolute"
                             left={side}
@@ -85,8 +85,8 @@ export default function Portfolio() {
                         {/* Right Icon */}
                         <IconButton
                             aria-label="right-arrow"
-                            colorScheme="gray"
-                            color="cyan.400"
+                            colorScheme="cyan"
+                            color="white"
                             borderRadius={0}
                             position="absolute"
                             right={side}
@@ -101,7 +101,7 @@ export default function Portfolio() {
                             {cards.map((url, index) => (
                                 <Box
                                     key={index}
-                                    height={'6xl'}
+                                    height={['280px', 'md']}
                                     position="relative"
                                     backgroundPosition="center"
                                     backgroundRepeat="no-repeat"
