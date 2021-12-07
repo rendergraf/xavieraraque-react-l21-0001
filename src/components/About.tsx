@@ -6,7 +6,7 @@ import "../sass/style.scss";
 
 export default function About() {  
     return (
-            <Container id="about" maxW='container.lg' py={8}>
+            <Container id="about" maxW='container.lg' py={8} h='100vh'>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Stack spacing={4}>
                         <Profile  />

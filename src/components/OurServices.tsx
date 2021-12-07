@@ -67,7 +67,7 @@ export default function SplitWithImage() {
 	  });
 
 	return (
-		<Container id="services" maxW='container.lg' py={8}>
+		<Container id="services" maxW='container.lg' py={8} h='100vh'>
 			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
 				<Stack spacing={4}>
 					<Heading textAlign={['center', 'left']}>Our Services</Heading>
