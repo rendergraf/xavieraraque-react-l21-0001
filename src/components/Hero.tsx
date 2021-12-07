@@ -38,7 +38,13 @@ const Hero = () => {
             options={jsonP}
         />
             <Container maxW='container.xl' zIndex="1">
-                <Text size='4xl' fontSize='30px' spacing={1} color='white' align="center">WELCOME TO MY WEBSITE</Text>
+                <Text size='4xl' fontSize='30px' spacing={1} color='white' align="center">
+                    <Typical
+                        steps={['Hello I´m Xavier Araque ', 1500, 'WELCOME TO MY WEBSITE', 1500, ]}
+                        loop={1}
+                        wrapper="p"
+                    />
+                </Text>
                 <Heading 
                 as='h1' 
                 size='4xl' 
@@ -46,10 +52,11 @@ const Hero = () => {
                 color='white' 
                 bgGradient='linear(to-r, orange.100, cyan.100, purple.200)'
                 bgClip='text'
-                fontWeight='extrabold'                
+                fontWeight='extrabold' 
+                textAlign='center'              
                 >
                     <Typical
-                        steps={['Hello my name is Xavier Araque ', 1500, 'I´am...', 1500, 'Senior Developer ', 1500, 'Senior Developer React', 1500, 'Senior Developer ', 1500, 'Senior Developer Chakra UI', 1500]}
+                        steps={[7000, 'React.js Developer', 1500, 'Excellent technical communication', 1500, 'Core skills and algorithms', 1500, 'Proactive problem-solving', 0]}
                         loop={Infinity}
                         wrapper="p"
                     />
