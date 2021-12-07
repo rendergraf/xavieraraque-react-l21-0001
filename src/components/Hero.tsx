@@ -48,7 +48,7 @@ const Hero = () => {
                 <Heading 
                 as='h1' 
                 size='4xl' 
-                fontSize={['22px', '28px', '43px']} 
+                fontSize={['21px', '28px', '43px']} 
                 color='white' 
                 bgGradient='linear(to-r, orange.100, cyan.100, purple.200)'
                 bgClip='text'
