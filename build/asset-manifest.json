@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/xavieraraque-react-l21-0001/static/css/main.753fe337.chunk.css",
+    "main.js": "/xavieraraque-react-l21-0001/static/js/main.5ac48c35.chunk.js",
+    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.5ac48c35.chunk.js.map",
+    "runtime-main.js": "/xavieraraque-react-l21-0001/static/js/runtime-main.7e1a8488.js",
+    "runtime-main.js.map": "/xavieraraque-react-l21-0001/static/js/runtime-main.7e1a8488.js.map",
+    "static/js/2.f22cd05e.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.f22cd05e.chunk.js",
+    "static/js/2.f22cd05e.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.f22cd05e.chunk.js.map",
+    "index.html": "/xavieraraque-react-l21-0001/index.html",
+    "static/css/main.753fe337.chunk.css.map": "/xavieraraque-react-l21-0001/static/css/main.753fe337.chunk.css.map",
+    "static/js/2.f22cd05e.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/2.f22cd05e.chunk.js.LICENSE.txt",
+    "static/media/fonts.scss": "/xavieraraque-react-l21-0001/static/media/GothamMedium.ed34690d.ttf",
+    "static/media/about.45d7317c.jpg": "/xavieraraque-react-l21-0001/static/media/about.45d7317c.jpg",
+    "static/media/hero-bg.19a9c297.jpg": "/xavieraraque-react-l21-0001/static/media/hero-bg.19a9c297.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7e1a8488.js",
+    "static/js/2.f22cd05e.chunk.js",
+    "static/css/main.753fe337.chunk.css",
+    "static/js/main.5ac48c35.chunk.js"
+  ]
+}

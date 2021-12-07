@@ -2,6 +2,7 @@
   "name": "xavieraraque-react-l21-0001",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://rendergraf.github.io/xavieraraque-react-l21-0001/",
   "dependencies": {
     "@chakra-ui/react": "^1.7.2",
     "@deadcoder0904/react-typical": "^0.1.2",
@@ -16,6 +17,7 @@
     "@types/react-dom": "^17.0.11",
     "@types/react-scroll": "^1.8.3",
     "framer-motion": "^4",
+    "gh-pages": "^3.2.3",
     "node-sass": "4.14.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -29,8 +31,10 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
-    "build": "react-scripts build && mv build/* docs && rm -Rf build",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

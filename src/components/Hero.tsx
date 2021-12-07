@@ -2,16 +2,12 @@ import { Container, Heading, Text, Center, Link, Button } from "@chakra-ui/react
 import Particles from "react-tsparticles"
 import jsonParticles from '../utils/particles.json'
 import { ReactTypical as Typical } from '@deadcoder0904/react-typical'
-/* import Typical from 'react-typical' */
+import IMAGE from '../assets/hero-bg.jpg'
 import "../sass/style.scss";
-
-
-
 
 const Hero = () => {
     const particlesInit = () => {};
     const particlesLoaded = () => {};
-
     let jsonP:object = jsonParticles;
 
     return (
@@ -20,7 +16,7 @@ const Hero = () => {
         w="100%" h="100vh"
         loading='eager'
         overflow='hidden'
-        backgroundImage="url('/images/hero-bg.jpg')"
+        backgroundImage={IMAGE}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
         bgSize="cover"
