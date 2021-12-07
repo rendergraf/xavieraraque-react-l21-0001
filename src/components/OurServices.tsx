@@ -21,6 +21,7 @@ import {
 } from 'react-icons/md';
 import { ReactElement, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
+import { Link } from "react-scroll";
 
 interface FeatureProps {
 	text: string;
@@ -67,13 +68,14 @@ export default function SplitWithImage() {
 	  });
 
 	return (
-		<Container id="services" maxW='container.lg' py={[8,20]} minH={['100vh', 'auto']}>
+		<Container id="services" maxW='container.lg' py={[8,20]} px={[5,5]} minH={['100vh', 'auto']}>
 			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
 				<Stack spacing={4}>
 					<Heading textAlign={['center', 'left']}>Our Services</Heading>
 					<Text color={'gray.500'} fontSize={'lg'}>
-						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-						nonumy eirmod tempor invidunt ut labore
+					I focus with these three services to offer development and support services for web
+					applications recative with React.JS, please feel free to ask if your problem is not on the list,
+					<Link to={'about'} smooth={true} duration={500}><Text as='u'> contact</Text></Link> me without obligation.
 					</Text>
 					<Stack
 						spacing={4}
@@ -88,13 +90,13 @@ export default function SplitWithImage() {
 							}
 							iconBg={useColorModeValue('cyan.300', 'yellow.900')}
 							text={'Web Development'}
-							read={"React.JS Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer abore wes anderson cred nesciunt sapiente ea proident."}
+							read={"If you want to make sure the scale of your project matches your ambitions for the future. I will use React and others library for build you web,  I will ensure that your project is built to grow from the very beginning."}
 						/>							
 						<Feature
 							icon={<Icon as={MdImportantDevices} color={'green.500'} w={5} h={5} />}
 							iconBg={useColorModeValue('green.100', 'green.900')}
-							text={'Refresh Websites'}
-							read={"Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer abore wes anderson cred nesciunt sapiente ea proident."}
+							text={'Refresh Websites/Issue'}
+							read={"AIf you already have a website and want to refresh, create new components or have a bug, we can help with your problem."}
 						/>
 						<Feature
 							icon={
@@ -102,7 +104,7 @@ export default function SplitWithImage() {
 							}
 							iconBg={useColorModeValue('purple.100', 'purple.900')}
 							text={'Technical support'}
-							read={"Hola soy Backup"}
+							read={"You want advice to start a new project or you want to hire fixed hours per month to maintain or update your projects, we can help you."}
 						/>
 					</Stack>
 				</Stack>

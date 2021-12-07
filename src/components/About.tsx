@@ -21,7 +21,18 @@ export default function About() {
                             <Heading textAlign={['center', 'left']} as='h3' size='md'>
                                 Software Developer
                             </Heading>
-                            <Text paddingY={'20px'} fontSize='19px'>Web Developer with 10+ years of experience in designing and developing user interfaces, testing, debugging and tracing staff within e-commerce technologies. Proven ability in optimizing web functionalities that improve data retrieval and workflow efficiencies. </Text>
+                            <Text paddingY={'20px'} fontSize='19px'>
+                                I'm a full-stack engineer with over 12 years of experience in web development,
+                                managing all aspects of the development process.<br /><br />
+
+                                I worked on 20+ projects and solved complex problems in various industries including marketing,
+                                eCommerce, technology, museums, jewelry.<br /><br />
+                                
+                                I holds a degree Bachelor in Computer Science and Engineering.
+                                Me specialties include JavaScript, React, Redux, Node, TypeScript, HTML5, CSS3, SASS, PHP, REST API, Express, MongoDB, MySQL, and AWS Cloud services.<br /><br />
+
+                                I ready for an opportunity to use his skills to grow your revenue exponentially with an excellent web product.
+                            </Text>
                             <Grid
                                 templateRows={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
                                 templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)']}
@@ -175,7 +186,7 @@ export default function About() {
                                         templateColumns='repeat(5, 1fr)'
                                         rowGap={0}
                                     >
-                                        <GridItem colSpan={4} fontSize='12px' color='gray.800'>SQL, Mongo DB</GridItem>
+                                        <GridItem colSpan={4} fontSize='12px' color='gray.800'>MySQL, Mongo DB</GridItem>
                                         <GridItem colSpan={1} fontSize='12px' color='gray.800' textAlign="right">92%</GridItem>
                                         <GridItem colSpan={5} h='10px'>
                                             <Progress
@@ -229,7 +240,7 @@ export default function About() {
                                         templateColumns='repeat(5, 1fr)'
                                         rowGap={0}
                                     >
-                                        <GridItem colSpan={4} fontSize='12px' color='gray.800'>Git</GridItem>
+                                        <GridItem colSpan={4} fontSize='12px' color='gray.800'>Git, Github</GridItem>
                                         <GridItem colSpan={1} fontSize='12px' color='gray.800' textAlign="right">99%</GridItem>
                                         <GridItem colSpan={5} h='10px'>
                                             <Progress
