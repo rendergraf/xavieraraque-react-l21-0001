@@ -21,7 +21,7 @@ export default function Profile() {
 
 	  
 	return (
-		<Center p='70px 0 10px 0'>
+		<Center p='40px 0 10px 0'>
 			<Box
 				ref={ref}
 				transition='all .3s ease-in-out'

@@ -338,7 +338,7 @@
     "number": {
       "density": {
         "enable": true,
-        "area": 1000,
+        "area": 600,
         "factor": 1000
       },
       "limit": 0,

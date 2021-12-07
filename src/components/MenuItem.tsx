@@ -18,7 +18,7 @@ export default function MenuItem({ toggle, children, to = "/", ...rest }: MenuIt
             to={to}
             spy={true}
             smooth={true}
-            offset={-96}
+            offset={-56} /* HEADER SCROLL*/ 
             duration={500}
             >
                 <Text

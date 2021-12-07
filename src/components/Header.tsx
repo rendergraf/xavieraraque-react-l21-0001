@@ -10,7 +10,7 @@ export function ScrollFunction() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY > 72);
+            setScroll(window.scrollY > 57);
         });
     }, []);
 
