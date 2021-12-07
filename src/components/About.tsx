@@ -21,7 +21,7 @@ export default function About() {
                             <Heading textAlign={['center', 'left']} as='h3' size='md'>
                                 Software Developer
                             </Heading>
-                            <Text fontSize='19px'>Web Developer with 10+ years of experience in designing and developing user interfaces, testing, debugging and tracing staff within e-commerce technologies. Proven ability in optimizing web functionalities that improve data retrieval and workflow efficiencies. </Text>
+                            <Text paddingY={'20px'} fontSize='19px'>Web Developer with 10+ years of experience in designing and developing user interfaces, testing, debugging and tracing staff within e-commerce technologies. Proven ability in optimizing web functionalities that improve data retrieval and workflow efficiencies. </Text>
                             <Grid
                                 templateRows={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
                                 templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)']}

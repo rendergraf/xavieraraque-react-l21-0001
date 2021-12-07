@@ -44,9 +44,9 @@ const Feature = ({ text, icon, iconBg, read }: FeatureProps) => {
 					bg={iconBg}>
 					{icon}
 				</Flex>
-				<Text fontWeight={600}>{text}</Text>
+				<Text fontSize={['0.9em','1em']} fontWeight={600}>{text}</Text>
 				<Spacer />
-				<Text size='sm' onClick={handleToggle} display="inline-block">
+				<Text fontSize={['0.8em','1em']} onClick={handleToggle} display="inline-block">
 					{show ? ( <> Close <Box display="inline-block"><IoCaretUp color="#4299E1" /></Box> </>) : ( <> Read  <Box display="inline-block"><IoCaretDown color="#4299E1"/></Box> </>) }
 				</Text>
 			</Stack>
