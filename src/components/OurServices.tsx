@@ -75,7 +75,7 @@ export default function SplitWithImage() {
 					<Text color={'gray.500'} fontSize={'lg'}>
 					I focus with these three services to offer development and support services for web
 					applications recative with React.JS, please feel free to ask if your problem is not on the list, 
-					<Link to={'about'} smooth={true} duration={500}><Text as='u'>contact</Text></Link> me without obligation.
+					<Link to={'about'} smooth={true} duration={500}> <Text as='u'>contact</Text></Link> me without obligation.
 					</Text>
 					<Stack
 						spacing={4}

@@ -87,7 +87,7 @@ export default function Profile() {
 						color="black"
 						onClick={(e) => {
 							e.preventDefault();
-							window.location.href = '#about';
+							window.location.href = 'https://github.com/rendergraf';
 						}}
 					>
 						Github

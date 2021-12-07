@@ -10,30 +10,7 @@ export default function About() {
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Stack spacing={4}>
                         <Profile  />
-                    </Stack>
-                    <Stack
-                        p={['1', '2', '10, 0']}
-                    >
-                        <Stack spacing={3}>
-                            <Heading textAlign={['center', 'left']} as='h2' size='xl'>
-                                Xavier Araque
-                            </Heading>
-                            <Heading textAlign={['center', 'left']} as='h3' size='md'>
-                                Software Developer
-                            </Heading>
-                            <Text paddingY={'20px'} fontSize='19px'>
-                                I'm a full-stack engineer with over 12 years of experience in web development,
-                                managing all aspects of the development process.<br /><br />
-
-                                I worked on 20+ projects and solved complex problems in various industries including marketing,
-                                eCommerce, technology, museums, jewelry.<br /><br />
-                                
-                                I holds a degree Bachelor in Computer Science and Engineering.
-                                Me specialties include JavaScript, React, Redux, Node, TypeScript, HTML5, CSS3, SASS, PHP, REST API, Express, MongoDB, MySQL, and AWS Cloud services.<br /><br />
-
-                                I ready for an opportunity to use his skills to grow your revenue exponentially with an excellent web product.
-                            </Text>
-                            <Grid
+                        <Grid
                                 templateRows={['repeat(2, 1fr)', 'repeat(2, 1fr)', 'repeat(3, 1fr)']}
                                 templateColumns={['repeat(1, 1fr)', 'repeat(1, 1fr)', 'repeat(2, 1fr)']}
                                 gap={5}
@@ -256,6 +233,30 @@ export default function About() {
                                     </Grid>
                                 </Tooltip>
                             </Grid>
+                    </Stack>
+                    <Stack
+                        p={['1', '2', '10, 0']}
+                    >
+                        <Stack spacing={3}>
+                            <Heading textAlign={['center', 'left']} as='h2' size='xl'>
+                                Xavier Araque
+                            </Heading>
+                            <Heading textAlign={['center', 'left']} as='h3' size='md'>
+                                Software Developer
+                            </Heading>
+                            <Text paddingY={'20px'} fontSize='19px'>
+                                I'm a full-stack engineer with over 12 years of experience in web development,
+                                managing all aspects of the development process.<br /><br />
+
+                                I worked on 20+ projects and solved complex problems in various industries including marketing,
+                                eCommerce, technology, museums, jewelry.<br /><br />
+                                
+                                I holds a degree Bachelor in Computer Science and Engineering.
+                                Me specialties include JavaScript, React, Redux, Node, TypeScript, HTML5, CSS3, SASS, PHP, REST API, Express, MongoDB, MySQL, and AWS Cloud services.<br /><br />
+
+                                I ready for an opportunity to use his skills to grow your revenue exponentially with an excellent web product.
+                            </Text>
+
                         </Stack>
                     </Stack>
                 </SimpleGrid>
