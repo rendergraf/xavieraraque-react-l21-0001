@@ -53,7 +53,8 @@ const Hero = () => {
                 bgGradient='linear(to-r, orange.100, cyan.100, purple.200)'
                 bgClip='text'
                 fontWeight='extrabold' 
-                textAlign='center'              
+                textAlign='center'
+                h='43px'            
                 >
                     <Typical
                         steps={[7000, 'React.js Developer', 1500, 'Excellent technical communication', 1500, 'Core skills and algorithms', 1500, 'Proactive problem-solving', 0]}
