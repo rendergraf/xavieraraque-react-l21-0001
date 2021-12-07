@@ -38,7 +38,7 @@ const Hero = () => {
             options={jsonP}
         />
             <Container maxW='container.xl' zIndex="1">
-                <Text size='4xl' fontSize='30px' spacing={1} color='white' align="center">
+                <Text h='45px' size='4xl' fontSize='30px' spacing={1} color='white' align="center">
                     <Typical
                         steps={['Hello I´m Xavier Araque ', 1500, 'WELCOME TO MY WEBSITE', 1500, ]}
                         loop={1}
