@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container, Stack, Heading, Text, Tooltip, SimpleGrid, Box, Icon, IconButton, useBreakpointValue, HStack, Button, ButtonGroup, Divider } from "@chakra-ui/react"
+import { Container, Collapse, Stack, Heading, Text, Tooltip, SimpleGrid, Box, Icon, IconButton, useBreakpointValue, HStack, Button, ButtonGroup, Divider } from "@chakra-ui/react"
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { FaExternalLinkSquareAlt, FaBootstrap, FaSass, FaHtml5, FaNodeJs } from 'react-icons/fa'
-import { IoLogoAngular, IoLogoCss3 } from 'react-icons/io'
+import { IoLogoAngular, IoLogoCss3, IoIosArrowDropdownCircle, IoIosArrowDropupCircle} from 'react-icons/io'
 import { DiMongodb } from 'react-icons/di'
 import Slider from 'react-slick';
 import "../sass/style.scss";
@@ -41,17 +41,33 @@ export default function Portfolio() {
         hm03,
     ];
 
+    const [show, setShow] = React.useState(false)
+
+    const handleToggle = () => setShow(!show)
+
     return (
         <Container id="portfolio" maxW='container.lg' py={[8, 20]} minH={['100vh', 'auto']}>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} >
                 <Stack>
                     <Heading textAlign={['center', 'left']}>HappyMeal.com</Heading>
                     <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: McDonald's</Text>
-                    <Text paddingY={'1.2em'} fontSize='1.2em'>
-                    Team Leader Front-end, coordinate appropriate design and development of websites responsive technologies, 
-                    Scrum agile management methodologies
-                    </Text>
-                    <ButtonGroup variant='solid' spacing='6' py={5}>
+                    <Box paddingY={'1.2em'} fontSize='1.2em'>
+                        <Collapse startingHeight={200} in={show}>
+                        I worked as Technical Leader and Front-end at TeravisionTech for the creation of the new HappyMeal.com site.<br /><br />
+                        My proposal was to make a new wesite made with cutting-edge technologies on a Stack MEAN, Node.js, 
+                        Angular MongoDB and Express. <br /><br />
+                        I was in charge of a group of 14 developers, between backend, 
+                        frontend and QA, it was an exciting job and a professional challenge make the components work in harmony, 
+                        knowing that the world of reactive applications was booming and finally we managed to make an excellent 
+                        website for one of the most important companies on the planet Macdonals.
+                        </Collapse>
+                        <HStack justifyContent="flex-end">
+                            <Button size='sm' onClick={handleToggle} variant='link' colorScheme='cyan' p={2}>
+                                Read {show ? (<>  Less <IoIosArrowDropupCircle /> </>) :  (<>  More <IoIosArrowDropdownCircle /> </>)  }
+                            </Button>
+                        </HStack>
+                    </Box>
+                    <ButtonGroup variant='solid' spacing='6'>
                         <Button
                             rightIcon={<FaExternalLinkSquareAlt />}
                             colorScheme='gray'
@@ -106,8 +122,8 @@ export default function Portfolio() {
                         </Tooltip>
                     </HStack>
                 </Stack>
-                <Stack boxShadow='md'>
-                    <Box
+                <Stack>
+                    <Box boxShadow='md'
                         position={'relative'}
                         height={['333px', '500px']}
                         width={'full'}

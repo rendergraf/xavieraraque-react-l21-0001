@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/xavieraraque-react-l21-0001/static/css/main.753fe337.chunk.css",
-    "main.js": "/xavieraraque-react-l21-0001/static/js/main.7adab210.chunk.js",
-    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.7adab210.chunk.js.map",
+    "main.css": "/xavieraraque-react-l21-0001/static/css/main.d715e2e7.chunk.css",
+    "main.js": "/xavieraraque-react-l21-0001/static/js/main.07ff2645.chunk.js",
+    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.07ff2645.chunk.js.map",
     "runtime-main.js": "/xavieraraque-react-l21-0001/static/js/runtime-main.90dc86ac.js",
     "runtime-main.js.map": "/xavieraraque-react-l21-0001/static/js/runtime-main.90dc86ac.js.map",
-    "static/js/2.cde42aac.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.cde42aac.chunk.js",
-    "static/js/2.cde42aac.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.cde42aac.chunk.js.map",
+    "static/js/2.a4214d2b.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.a4214d2b.chunk.js",
+    "static/js/2.a4214d2b.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.a4214d2b.chunk.js.map",
     "index.html": "/xavieraraque-react-l21-0001/index.html",
-    "static/css/main.753fe337.chunk.css.map": "/xavieraraque-react-l21-0001/static/css/main.753fe337.chunk.css.map",
-    "static/js/2.cde42aac.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/2.cde42aac.chunk.js.LICENSE.txt",
+    "static/css/main.d715e2e7.chunk.css.map": "/xavieraraque-react-l21-0001/static/css/main.d715e2e7.chunk.css.map",
+    "static/js/2.a4214d2b.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/2.a4214d2b.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/xavieraraque-react-l21-0001/static/media/GothamMedium.ed34690d.ttf",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.430f13c9.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.430f13c9.jpg",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.dad3e2c1.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.dad3e2c1.jpg",
@@ -19,8 +19,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.90dc86ac.js",
-    "static/js/2.cde42aac.chunk.js",
-    "static/css/main.753fe337.chunk.css",
-    "static/js/main.7adab210.chunk.js"
+    "static/js/2.a4214d2b.chunk.js",
+    "static/css/main.d715e2e7.chunk.css",
+    "static/js/main.07ff2645.chunk.js"
   ]
 }
