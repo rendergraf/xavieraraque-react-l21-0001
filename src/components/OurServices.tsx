@@ -1,4 +1,5 @@
 import {
+	chakra, 
 	Container,
 	SimpleGrid,
 	Image,
@@ -22,6 +23,8 @@ import {
 import { ReactElement, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from "react-scroll";
+
+const Jump = chakra(Link);
 
 interface FeatureProps {
 	text: string;
@@ -71,11 +74,11 @@ export default function SplitWithImage() {
 		<Container id="services" maxW='container.lg' py={[8,20]} px={[5,5]} minH={['100vh', 'auto']}>
 			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
 				<Stack spacing={4}>
-					<Heading textAlign={['center', 'left']}>Our Services</Heading>
+					<Heading textAlign={['center', 'left']}>Services</Heading>
 					<Text paddingY={'1.2em'} fontSize='1.2em' >
 					I focus with these three services to offer development and support services for web
-					applications recative with React.JS, please feel free to ask if your problem is not on the list, 
-					<Link to={'about'} smooth={true} duration={500}> <Text as='u' cursor="pointer">contact</Text></Link> me without obligation.
+					applications recative with React.JS, please feel free to ask if your problem is not on the list,
+					<Jump to={'about'} smooth={true} duration={500} fontWeight="bold" _hover={{ textDecoration: 'underline' }} color="#4299E1" cursor="pointer"> contact</Jump> me without obligation.
 					</Text>
 					<Stack
 						spacing={4}

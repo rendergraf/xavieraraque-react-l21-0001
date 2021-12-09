@@ -30,7 +30,7 @@ const NavBarContainer = ({ children, isOpen, mobile, ...props }: NavBarContainer
         <Flex
             className="nav-bar"
             transition="all 0.5s ease-in-out"
-            zIndex="2"
+            zIndex="3"
             pos="fixed"
             top="0"
             as="nav"

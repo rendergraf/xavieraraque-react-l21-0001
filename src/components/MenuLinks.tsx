@@ -1,6 +1,8 @@
-import { Box, Stack, Button } from "@chakra-ui/react";
+import { chakra, Box, Stack, Button } from "@chakra-ui/react";
 import { ScrollFunction } from "./Header"
 import MenuItem from "./MenuItem";
+
+const MenuLink = chakra(MenuItem);
 
 interface MenuLinksProps {
     toggle: any;
@@ -23,12 +25,12 @@ const MenuLinks = ({ toggle, isOpen }: MenuLinksProps ) => {
                 direction={["column", "row", "row", "row"]}
                 pt={[4, 4, 0, 0]}
             >
-                <MenuItem toggle={toggle} to="home">Home</MenuItem>
-                <MenuItem toggle={toggle} to="about">About</MenuItem>
-                <MenuItem toggle={toggle} to="services">Services</MenuItem>
-                <MenuItem toggle={toggle} to="portfolio">Portfolio</MenuItem>
-                <MenuItem toggle={toggle} to="testimonials">Testimonials</MenuItem>
-                <MenuItem to="contact" toggle={toggle}>
+                <MenuLink height={scroll ? "auto" : 0 } transform={scroll ? ["scaleX(1) scaleY(1)"] : ["scaleX(0) scaleY(0)"]} toggle={toggle} to="home">Home</MenuLink>
+                <MenuLink toggle={toggle} to="about">About</MenuLink>
+                <MenuLink toggle={toggle} to="services">Services</MenuLink>
+                <MenuLink toggle={toggle} to="portfolio">Portfolio</MenuLink>
+                <MenuLink toggle={toggle} to="testimonials">Testimonials</MenuLink>
+                <MenuLink to="contact" toggle={toggle}>
                     <Button
                         onClick={toggle}
                         size="sm"
@@ -41,7 +43,7 @@ const MenuLinks = ({ toggle, isOpen }: MenuLinksProps ) => {
                     >
                         Contact
                     </Button>
-                </MenuItem>
+                </MenuLink>
             </Stack>
         </Box>
     );
