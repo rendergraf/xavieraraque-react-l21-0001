@@ -72,10 +72,10 @@ export default function SplitWithImage() {
 			<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
 				<Stack spacing={4}>
 					<Heading textAlign={['center', 'left']}>Our Services</Heading>
-					<Text color={'gray.500'} fontSize={'lg'}>
+					<Text paddingY={'1.2em'} fontSize='1.2em' >
 					I focus with these three services to offer development and support services for web
 					applications recative with React.JS, please feel free to ask if your problem is not on the list, 
-					<Link to={'about'} smooth={true} duration={500}> <Text as='u'>contact</Text></Link> me without obligation.
+					<Link to={'about'} smooth={true} duration={500}> <Text as='u' cursor="pointer">contact</Text></Link> me without obligation.
 					</Text>
 					<Stack
 						spacing={4}

@@ -1,6 +1,9 @@
 import React from 'react'
-import { Container, Stack, Grid, GridItem, Heading, Text, SimpleGrid, Box, IconButton, useBreakpointValue } from "@chakra-ui/react"
+import { Container, Stack, Heading, Text, Tooltip, SimpleGrid, Box, Icon, IconButton, useBreakpointValue, HStack, Button, ButtonGroup, Divider } from "@chakra-ui/react"
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
+import { FaExternalLinkSquareAlt, FaBootstrap, FaSass, FaHtml5, FaNodeJs } from 'react-icons/fa'
+import { IoLogoAngular, IoLogoCss3 } from 'react-icons/io'
+import { DiMongodb } from 'react-icons/di'
 import Slider from 'react-slick';
 import "../sass/style.scss";
 
@@ -10,7 +13,6 @@ import hm03 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x15
 
 const settings = {
     dots: true,
-    lazyLoad: true,
     arrows: false,
     fade: false,
     infinite: true,
@@ -29,8 +31,8 @@ export default function Portfolio() {
 
     // These are the breakpoints which changes the position of the
     // buttons as the screen size changes
-    const top = useBreakpointValue({ base: '310px', md: '93%' });
-    const side = useBreakpointValue({ base: '3px', md: '2%' });
+    const top = useBreakpointValue({ base: '308px', md: '475px' });
+    const side = useBreakpointValue({ base: '5px', md: '5px' });
 
     // These are the images used in the slide
     const cards = [
@@ -39,22 +41,75 @@ export default function Portfolio() {
         hm03,
     ];
 
-
     return (
         <Container id="portfolio" maxW='container.lg' py={[8, 20]} minH={['100vh', 'auto']}>
-            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
+            <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} >
                 <Stack>
-                    <Heading textAlign={['center', 'left']}>Happy Meal</Heading>
-                    <Text color={'gray.500'} fontSize={'lg'}>
-                    I focus with these three services to offer development and support services for web
-                    applications recative with React.JS, please feel free to ask if your problem is not on the list, 
-                    contact me without obligation.
+                    <Heading textAlign={['center', 'left']}>HappyMeal.com</Heading>
+                    <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: McDonald's</Text>
+                    <Text paddingY={'1.2em'} fontSize='1.2em'>
+                    Team Leader Front-end, coordinate appropriate design and development of websites responsive technologies, 
+                    Scrum agile management methodologies
                     </Text>
+                    <ButtonGroup variant='solid' spacing='6' py={5}>
+                        <Button
+                            rightIcon={<FaExternalLinkSquareAlt />}
+                            colorScheme='gray'
+                            borderRadius='0px'
+                            size='xs'
+                            color="black"
+                            onClick={(e) => {
+                                e.preventDefault();
+                                window.open('https://www.happymeal.com/', '_blank');
+                            }}
+                        >
+                            Website
+                        </Button>
+                    </ButtonGroup>
+                    <Divider orientation='horizontal' />
+                    <Text color={'gray.800'} fontSize={'lg'}>Stack</Text>
+                    <HStack justifyContent="space-between">
+                        <Tooltip borderRadius="5px" hasArrow label='Angular.JS' bg='gray.600' color='white' placement='top'>
+                            <Box>
+                                <Icon as={IoLogoAngular} boxSize={[10, 12]} color='#dd0031' />
+                            </Box>
+                        </Tooltip>
+                        <Tooltip borderRadius="5px" hasArrow label='Node.JS' bg='gray.600' color='white' placement='top'>
+                            <Box>
+                                <Icon as={FaNodeJs} boxSize={[10, 12]} color='#569f43' />                        
+                            </Box>
+                        </Tooltip>
+                        <Tooltip borderRadius="5px" hasArrow label='MongoDB' bg='gray.600' color='white' placement='top'>
+                            <Box>                     
+                                <Icon as={DiMongodb} boxSize={[10, 12]} color='#4ca449' />
+                            </Box>
+                        </Tooltip>
+                        <Tooltip borderRadius="5px" hasArrow label='Bootstrap' bg='gray.600' color='white' placement='top'>
+                            <Box>
+                                <Icon as={FaBootstrap} boxSize={[10, 12]} color='#7811f2' />
+                            </Box>
+                        </Tooltip>
+                        <Tooltip borderRadius="5px" hasArrow label='Sass' bg='gray.600' color='white' placement='top'>
+                            <Box>
+                                <Icon as={FaSass} boxSize={[10, 12]} color='#c76494' />
+                            </Box>
+                        </Tooltip>
+                        <Tooltip borderRadius="5px" hasArrow label='HTML5' bg='gray.600' color='white' placement='top'>
+                            <Box>
+                                <Icon as={FaHtml5} boxSize={[10, 12]} color='#ea6229' />
+                            </Box>
+                        </Tooltip>
+                        <Tooltip borderRadius="5px" hasArrow label='CSS3' bg='gray.600' color='white' placement='top'>
+                            <Box>
+                                <Icon as={IoLogoCss3} boxSize={[10, 12]} color='#254bdd' />                            
+                            </Box>
+                        </Tooltip>
+                    </HStack>
                 </Stack>
-                <Stack>
+                <Stack boxShadow='md'>
                     <Box
                         position={'relative'}
-                        height={'400px'}
+                        height={['333px', '500px']}
                         width={'full'}
                         overflow={'hidden'}>
                         {/* CSS files for react-slick */}
@@ -71,6 +126,7 @@ export default function Portfolio() {
                         />
                         {/* Left Icon */}
                         <IconButton
+                            boxShadow='md'
                             aria-label="left-arrow"
                             colorScheme="cyan"
                             color="white"
@@ -85,6 +141,7 @@ export default function Portfolio() {
                         </IconButton>
                         {/* Right Icon */}
                         <IconButton
+                            boxShadow='md'
                             aria-label="right-arrow"
                             colorScheme="cyan"
                             color="white"

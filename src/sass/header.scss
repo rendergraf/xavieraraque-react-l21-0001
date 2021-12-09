@@ -1,8 +1,8 @@
 .nav-bar {
     &__box {
         &__menu-links {
-            &_nav-bar-active p {
-                color: #4299E1;
+            &_nav-bar-active {
+                color: #4299E1 !important;
             }
         }
     }

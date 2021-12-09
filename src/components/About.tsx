@@ -18,7 +18,7 @@ export default function About() {
                             >
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -45,7 +45,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -72,7 +72,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -99,7 +99,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -126,7 +126,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -153,7 +153,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -180,7 +180,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -207,7 +207,7 @@ export default function About() {
                                 </Tooltip>
                                 <Tooltip borderRadius="5px" hasArrow label='React.JS and Native' bg='gray.600' color='white' placement='top'>
                                     <Grid
-                                        p="2px 5px"
+                                        p={["2px 30px", "2px 5px"]}
                                         transition='all .2s ease-in-out'
                                         _hover={{
                                             boxShadow: 'md',
@@ -244,7 +244,7 @@ export default function About() {
                             <Heading textAlign={['center', 'left']} as='h3' size='md'>
                                 Software Developer
                             </Heading>
-                            <Text paddingY={'20px'} fontSize='19px'>
+                            <Text paddingY={'1.2em'} fontSize='1.2em'>
                                 I'm a full-stack engineer with over 12 years of experience in web development,
                                 managing all aspects of the development process.<br /><br />
 
