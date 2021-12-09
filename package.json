@@ -29,6 +29,7 @@
     "react-slick": "^0.28.1",
     "react-tsparticles": "^1.37.5",
     "react-typical": "^0.1.3",
+    "react-whatsapp": "^0.2.1",
     "typescript": "^4.5.2",
     "web-vitals": "^1.0.1"
   },

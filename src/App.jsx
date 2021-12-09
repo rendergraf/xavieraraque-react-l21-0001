@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import About from './components/About';
 import OurServices from './components/OurServices.tsx';
 import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 import Footer from './components/Footer'
 
 export default function App() {
@@ -14,6 +15,7 @@ export default function App() {
             <About />
             <OurServices />
             <Portfolio />
+            <Contact />
             <Footer />
         </Fragment>
     );

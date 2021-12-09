@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai'
 import { useInView } from 'react-intersection-observer';
+
 import IMAGE from '../assets/about.jpg'
 
 export default function Profile() {

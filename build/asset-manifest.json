@@ -1,26 +1,37 @@
 {
   "files": {
     "main.css": "/xavieraraque-react-l21-0001/static/css/main.d715e2e7.chunk.css",
-    "main.js": "/xavieraraque-react-l21-0001/static/js/main.c8eed6eb.chunk.js",
-    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.c8eed6eb.chunk.js.map",
+    "main.js": "/xavieraraque-react-l21-0001/static/js/main.56eb0928.chunk.js",
+    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.56eb0928.chunk.js.map",
     "runtime-main.js": "/xavieraraque-react-l21-0001/static/js/runtime-main.90dc86ac.js",
     "runtime-main.js.map": "/xavieraraque-react-l21-0001/static/js/runtime-main.90dc86ac.js.map",
-    "static/js/2.62213cb3.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.62213cb3.chunk.js",
-    "static/js/2.62213cb3.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.62213cb3.chunk.js.map",
+    "static/js/2.5c7d5065.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.5c7d5065.chunk.js",
+    "static/js/2.5c7d5065.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.5c7d5065.chunk.js.map",
     "index.html": "/xavieraraque-react-l21-0001/index.html",
     "static/css/main.d715e2e7.chunk.css.map": "/xavieraraque-react-l21-0001/static/css/main.d715e2e7.chunk.css.map",
-    "static/js/2.62213cb3.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/2.62213cb3.chunk.js.LICENSE.txt",
+    "static/js/2.5c7d5065.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/2.5c7d5065.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/xavieraraque-react-l21-0001/static/media/GothamMedium.ed34690d.ttf",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.430f13c9.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.430f13c9.jpg",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.dad3e2c1.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.dad3e2c1.jpg",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_3.3cf4336c.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_3.3cf4336c.jpg",
+    "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_4.bd50c362.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_4.bd50c362.jpg",
+    "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_5.ee18de9b.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_5.ee18de9b.jpg",
+    "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_6.ff4ca1d5.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_6.ff4ca1d5.jpg",
+    "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_7.a03e367c.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_7.a03e367c.jpg",
+    "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_8.a15b02ff.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_8.a15b02ff.jpg",
     "static/media/about.45d7317c.jpg": "/xavieraraque-react-l21-0001/static/media/about.45d7317c.jpg",
-    "static/media/hero-bg.19a9c297.jpg": "/xavieraraque-react-l21-0001/static/media/hero-bg.19a9c297.jpg"
+    "static/media/blog.ef7374fb.png": "/xavieraraque-react-l21-0001/static/media/blog.ef7374fb.png",
+    "static/media/calendar.ad0cc9c4.png": "/xavieraraque-react-l21-0001/static/media/calendar.ad0cc9c4.png",
+    "static/media/collection.3f6fd3cf.jpg": "/xavieraraque-react-l21-0001/static/media/collection.3f6fd3cf.jpg",
+    "static/media/favorite.270752b6.png": "/xavieraraque-react-l21-0001/static/media/favorite.270752b6.png",
+    "static/media/hero-bg.19a9c297.jpg": "/xavieraraque-react-l21-0001/static/media/hero-bg.19a9c297.jpg",
+    "static/media/home.bcc6f8da.png": "/xavieraraque-react-l21-0001/static/media/home.bcc6f8da.png",
+    "static/media/press.438e65c0.png": "/xavieraraque-react-l21-0001/static/media/press.438e65c0.png"
   },
   "entrypoints": [
     "static/js/runtime-main.90dc86ac.js",
-    "static/js/2.62213cb3.chunk.js",
+    "static/js/2.5c7d5065.chunk.js",
     "static/css/main.d715e2e7.chunk.css",
-    "static/js/main.c8eed6eb.chunk.js"
+    "static/js/main.56eb0928.chunk.js"
   ]
 }
