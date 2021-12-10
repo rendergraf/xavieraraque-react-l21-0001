@@ -19,7 +19,7 @@ function ifAvailable() {
         );
     } else {
         return (
-            <Icon color="green" boxSize={6} as={MdTimerOff}/>
+            <Icon color="red" boxSize={6} as={MdTimerOff}/>
         );
     }
 }
