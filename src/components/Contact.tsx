@@ -16,7 +16,7 @@ function ifAvailable() {
     const today = new Date(date.toLocaleString('en-US', { timeZone: "Europe/Madrid" })).getHours();
     if (today >= 8 && today <= 18) {
         return (
-            <Tooltip hasArrow label='Available' bg='gray.300' color='black'>          
+            <Tooltip hasArrow label='Available' bg='green' color='white' placement='left'>          
                 <Button
                     variant="ghost"
                     colorScheme='gray'
@@ -74,7 +74,7 @@ export default function Contact() {
                         </Heading>
                         <Text paddingY={'1.2em'} fontSize='1.2em'>
                             Contact me if you want to request some of my services, if you are part of the recruitment team, you can do it anyway, I can send you a Cover Letter or CV in PDF.<br /><br />
-                            Please telephone calls only if it is very important or urgent, office hours from 8h to 18h <Link fontWeight={'bold'} color='#4299E1' target={"_blank"} href="https://time.is/es/Spain/">(GMT+1) Europe/Madrid.</Link>
+                            Please telephone calls only if it is very important or urgent, office hours from 8h to 18h <Link fontWeight={'bold'} color='#4299E1' target={"_blank"} href="https://time.is/es/Spain/">(UTC+1) Europe/Madrid.</Link>
                         </Text>
                     </Stack>
                     <Stack bgColor={'gray.200'} borderRadius={'lg'} boxShadow='md'
