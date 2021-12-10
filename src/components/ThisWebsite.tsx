@@ -7,6 +7,9 @@ export default function ThisWebsite() {
             <Text fontWeight={'bold'} fontSize={['1.5em']} align={'center'} py={5}>
                 About this website
             </Text>
+            <Text py={5}>
+            I know this yellow section looks a bit ugly, but my intention is to take your attention so that you read this which is very important.
+            </Text>
             <Text>
             This site was created to be freely distributed, you can use this code freely for its own use, the only condition is not to delete the Power By Xavier Araque and the url that redirects you to Github, as well as when you publish the site on social networks do reference to Xavier Araque as author.
             </Text>
