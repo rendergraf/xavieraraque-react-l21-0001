@@ -16,7 +16,7 @@ function ifAvailable() {
     const today = new Date(date.toLocaleString('en-US', { timeZone: "Europe/Madrid" })).getHours();
     if (today >= 8 && today <= 18) {
         return (
-            <Tooltip hasArrow label='Available' bg='green' color='white' placement='left'>          
+            <Tooltip hasArrow label='Available' bg='green' color='white' placement='top'>          
                 <Button
                     variant="ghost"
                     colorScheme='gray'
@@ -34,7 +34,7 @@ function ifAvailable() {
         );
     } else {
         return (
-            <Tooltip hasArrow label='No Available' bg='red.600' color='white' placement='left'>
+            <Tooltip hasArrow label='No Available' bg='red.600' color='white' placement="top">
                 <Box>
                     <Button
                         isDisabled
