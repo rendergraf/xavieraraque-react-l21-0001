@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import { Container, Link, Collapse, Stack, Heading, Text, Tooltip, SimpleGrid, Box, Icon, HStack, Button, ButtonGroup, Divider } from "@chakra-ui/react"
 import { IoLogoAngular, IoLogoCss3, IoIosArrowDropdownCircle, IoIosArrowDropupCircle, IoLogoWordpress} from 'react-icons/io'
 import { FaExternalLinkSquareAlt, FaBootstrap, FaSass, FaHtml5, FaNodeJs, FaVuejs } from 'react-icons/fa'
@@ -28,8 +28,11 @@ import sm06 from '../assets/shakermuseum/press.png'
 
 export default function Portfolio() {
 
-    const [show, setShow] = React.useState(false)
-    const handleToggle = () => setShow(!show)
+    const [showhm, setShowhm] = useState(false)
+    const handleTogglehm = () => setShowhm(!showhm)
+
+    const [showsm, setShowsm] = useState(false)
+    const handleTogglesm = () => setShowsm(!showsm)
 
     const hm:string[] = [ hm01, hm02, hm03, hm04, hm05, hm06, hm07, hm08];
     const sm:string[] = [ sm01, sm02, sm03, sm04, sm05, sm06 ];
@@ -41,7 +44,7 @@ export default function Portfolio() {
                     <Heading textAlign={['center', 'left']}>HappyMeal.com</Heading>
                     <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: McDonald's</Text>
                     <Box paddingY={'1.2em'} fontSize='1.2em'>
-                        <Collapse startingHeight={200} in={show}>
+                        <Collapse startingHeight={200} in={showhm}>
                         I worked as Technical Leader and Front-end at <Link fontWeight="bold" color="#4299E1" href='https://www.teravisiontech.com/' isExternal>TeravisionTech</Link> for the creation of the new HappyMeal.com site.<br /><br />
                         My proposal was to make a new wesite made with cutting-edge technologies on a Stack MEAN, Node.js, 
                         Angular MongoDB and Express. <br /><br />
@@ -51,8 +54,8 @@ export default function Portfolio() {
                         website for one of the most important companies on the planet Macdonals.
                         </Collapse>
                         <HStack justifyContent="flex-end">
-                            <Button size='sm' onClick={handleToggle} variant='link' colorScheme='cyan' p={2}>
-                                Read {show ? (<>  Less <IoIosArrowDropupCircle /> </>) :  (<>  More <IoIosArrowDropdownCircle /> </>)  }
+                            <Button size='sm' onClick={handleTogglehm} variant='link' colorScheme='cyan' p={2}>
+                                Read {showhm ? (<>  Less <IoIosArrowDropupCircle /> </>) :  (<>  More <IoIosArrowDropdownCircle /> </>)  }
                             </Button>
                         </HStack>
                     </Box>
@@ -121,7 +124,7 @@ export default function Portfolio() {
                     <Heading textAlign={['center', 'left']}>ShakerMuseum.us</Heading>
                     <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: Shaker Museum</Text>
                     <Box paddingY={'1.2em'} fontSize='1.2em'>
-                        <Collapse startingHeight={200} in={show}>
+                        <Collapse startingHeight={200} in={showsm}>
                         One of the projects that I liked the most was working on the development of the new site for Shaker Museum, I was hired as an outsourcer by <Link fontWeight="bold" color="#4299E1" href='https://studioanalogous.com/' isExternal>Studio Analogous</Link> for this challenge.<br /><br />
 
                         The idea was to catalog more than 18K objects, capable of performing super fast searches in its collection, we used Elastic Search replicating an API and creating a query view with Vue.JS<br /><br />
@@ -133,8 +136,8 @@ export default function Portfolio() {
                         It was a pleasure for me to have worked on this wonderful project with the Studio Analogous and Shaker Museum team, I learned many things from this experience.
                         </Collapse>
                         <HStack justifyContent="flex-end">
-                            <Button size='sm' onClick={handleToggle} variant='link' colorScheme='cyan' p={2}>
-                                Read {show ? (<>  Less <IoIosArrowDropupCircle /> </>) :  (<>  More <IoIosArrowDropdownCircle /> </>)  }
+                            <Button size='sm' onClick={handleTogglesm} variant='link' colorScheme='cyan' p={2}>
+                                Read {showsm ? (<>  Less <IoIosArrowDropupCircle /> </>) :  (<>  More <IoIosArrowDropdownCircle /> </>)  }
                             </Button>
                         </HStack>
                     </Box>

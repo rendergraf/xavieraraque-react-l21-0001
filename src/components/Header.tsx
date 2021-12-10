@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Flex, /* useMediaQuery, */ useBreakpointValue } from "@chakra-ui/react";
+import { Flex, useBreakpointValue } from "@chakra-ui/react";
 import MenuToggle from "./MenuToggle";
 import MenuLinks from "./MenuLinks";
 import Logo from "./Logo";
@@ -27,31 +27,31 @@ const NavBarContainer = ({ children, isOpen, mobile, ...props }: NavBarContainer
     const scroll = ScrollFunction();
 
     return (
-        <Flex
-            className="nav-bar"
-            transition="all 0.5s ease-in-out"
-            zIndex="3"
-            pos="fixed"
-            top="0"
-            as="nav"
-            align="center"
-            justify="space-between"
-            wrap="wrap"
-            w="100%"
-            mb={8}
-            p={scroll ? ["15px 32px"] : ["32px 32px"]}
-            bg={
-                mobile ? (isOpen ? (scroll ? ["white"] : ["cyan.400"]) :
-                (scroll ? ["white"] : ["transparent"]) ) :
-                (isOpen ? (scroll ? ["white"] : ["transparent"]) :
-                (scroll ? ["white"] : ["transparent"]) )
-            }
-            color={scroll ? ["gray.800"] : ["white"]}
-            boxShadow={scroll ? ['lg'] : [null]}
-            {...props}
-        >
-            {children}
-        </Flex>
+            <Flex
+                className="nav-bar"
+                transition="all 0.5s ease-in-out"
+                zIndex="3"
+                pos="fixed"
+                top="0"
+                as="nav"
+                align="center"
+                justify="space-between"
+                wrap="wrap"
+                w="100%"
+                mb={8}
+                p={scroll ? ["15px 32px"] : ["32px 32px"]}
+                bg={
+                    mobile ? (isOpen ? (scroll ? ["white"] : ["cyan.400"]) :
+                    (scroll ? ["white"] : ["transparent"]) ) :
+                    (isOpen ? (scroll ? ["white"] : ["transparent"]) :
+                    (scroll ? ["white"] : ["transparent"]) )
+                }
+                color={scroll ? ["gray.800"] : ["white"]}
+                boxShadow={scroll ? ['lg'] : [null]}
+                {...props}
+            >
+                {children}
+            </Flex>
     );
 };
 

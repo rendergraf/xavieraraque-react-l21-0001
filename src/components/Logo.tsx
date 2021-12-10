@@ -1,12 +1,18 @@
-import React from "react"
-import { Box, Text } from "@chakra-ui/react"
+import { chakra, Box } from "@chakra-ui/react"
+import { Link } from "react-scroll";
+const LinkScroll = chakra(Link);
 
 export default function Logo(props:any) {
     return (
         <Box {...props}>
-            <Text fontSize="lg" fontWeight="bold">
+            <LinkScroll
+            smooth={true}
+            fontSize="lg"
+            fontWeight="bold"
+            to="home"
+            cursor={"pointer"}>
                 Xavier Araque
-            </Text>
+            </LinkScroll>
         </Box>
     )
 }

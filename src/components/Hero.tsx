@@ -1,9 +1,12 @@
-import { Container, Heading, Text, Center, Link, Button } from "@chakra-ui/react"
+import { chakra, Container, Heading, Text, Center, Button } from "@chakra-ui/react"
 import Particles from "react-tsparticles"
 import jsonParticles from '../utils/particles.json'
 import { ReactTypical as Typical } from '@deadcoder0904/react-typical'
-import IMAGE from '../assets/hero-bg.jpg'
+import { Link } from "react-scroll";
+import IMAGE from '../assets/hero-image.png'
 import "../sass/style.scss";
+
+const LinkScroll = chakra(Link);
 
 const Hero = () => {
     const particlesInit = () => {};
@@ -64,20 +67,21 @@ const Hero = () => {
                     />
                 </Heading>
                 <Center>
-                    <Button
-                    my={10} 
-                    colorScheme='magenta' 
-                    borderRadius='0px' 
-                    size='lg'
-                    onClick={(e) => {
-                        e.preventDefault();
-                        window.location.href='#about';
-                        }}
-                    >Contact me</Button>
+                    <LinkScroll to="contact" smooth={true} pt={8} offset={-56}>
+                        <Button
+                            colorScheme='magenta'
+                            size="lg"
+                            borderRadius='0px'
+                        >
+                            Contact
+                        </Button>
+                    </LinkScroll>
                 </Center>
-                <Link
+                <LinkScroll
+                cursor={'pointer'}
                 className='mouse-scroll'
-                href='#about'
+                to='about'
+                smooth={true}
                 sx={{
                     '@media screen and (max-width: 48em)': {
                         display: 'none'
@@ -87,7 +91,7 @@ const Hero = () => {
                     <span className="mouse-scroll__mouse">
                         <span className="mouse-scroll__mouse_movement"></span>
                     </span>
-                </Link>
+                </LinkScroll>
             </Container>
         </Center>
     )

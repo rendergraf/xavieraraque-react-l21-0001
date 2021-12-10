@@ -1,94 +1,61 @@
 import {
-    Box,
-    chakra,
-    Container,
-    Link,
-    Stack,
-    Text,
-    useColorModeValue,
-    VisuallyHidden,
-  } from '@chakra-ui/react';
-  import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
-  import { ReactNode } from 'react';
-  
-  
-  const SocialButton = ({
-    children,
-    label,
-    href,
-  }: {
-    children: ReactNode;
-    label: string;
-    href: string;
-  }) => {
-    return (
-      <chakra.button
-        bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
-        rounded={'full'}
-        w={8}
-        h={8}
-        cursor={'pointer'}
-        as={'a'}
-        href={href}
-        display={'inline-flex'}
-        alignItems={'center'}
-        justifyContent={'center'}
-        transition={'background 0.3s ease'}
-        _hover={{
-          bg: useColorModeValue('blackAlpha.200', 'whiteAlpha.200'),
-        }}>
-        <VisuallyHidden>{label}</VisuallyHidden>
-        {children}
-      </chakra.button>
-    );
-  };
-  
-  export default function SmallCentered() {
-    return (
-      <Box
-        bg={useColorModeValue('gray.50', 'gray.900')}
-        color={useColorModeValue('gray.700', 'gray.200')}>
-        <Container
-          as={Stack}
-          maxW={'6xl'}
-          py={4}
-          spacing={4}
-          justify={'center'}
-          align={'center'}>
-          <Stack direction={'row'} spacing={6}>
-            <Link href={'#'}>Home</Link>
-            <Link href={'#'}>About</Link>
-            <Link href={'#'}>Blog</Link>
-            <Link href={'#'}>Contact</Link>
-          </Stack>
-        </Container>
-  
-        <Box
-          borderTopWidth={1}
-          borderStyle={'solid'}
-          borderColor={useColorModeValue('gray.200', 'gray.700')}>
-          <Container
-            as={Stack}
-            maxW={'6xl'}
-            py={4}
-            direction={{ base: 'column', md: 'row' }}
-            spacing={4}
-            justify={{ base: 'center', md: 'space-between' }}
-            align={{ base: 'center', md: 'center' }}>
-            <Text>© 2021 Xavier Araque</Text>
-            <Stack direction={'row'} spacing={6}>
-              <SocialButton label={'Twitter'} href={'#'}>
-                <FaTwitter />
-              </SocialButton>
-              <SocialButton label={'YouTube'} href={'#'}>
-                <FaYoutube />
-              </SocialButton>
-              <SocialButton label={'Instagram'} href={'#'}>
-                <FaInstagram />
-              </SocialButton>
-            </Stack>
-          </Container>
-        </Box>
-      </Box>
-    );
-  }
+	Box,
+	chakra,
+	Container,
+	Link,
+	Stack,
+	Text,
+	useColorModeValue
+} from '@chakra-ui/react';
+import { TriangleUpIcon } from '@chakra-ui/icons'
+import MenuItem from "./MenuItem";
+
+const MenuLink = chakra(MenuItem);
+
+interface MenuLinksProps {
+	toggle: any;
+	isOpen: boolean;
+}
+
+export default function SmallCentered({ toggle, isOpen }: MenuLinksProps) {
+	return (
+		<Box
+			borderTopWidth={1}
+			borderStyle={'solid'}
+			borderColor={useColorModeValue('gray.200', 'gray.700')}
+			bg={useColorModeValue('gray.50', 'gray.900')}
+			color={useColorModeValue('gray.700', 'gray.200')}>
+			<Container
+				as={Stack}
+				maxW={'xlg'}
+				py={4}
+				spacing={4}
+				justify={'center'}
+				align={['center', 'flex-end']}
+				fontSize={['10px', '1em']
+			}
+				>
+				<Stack direction={'row'} spacing={[3,8]} padding={['0 0','0 15px']}>
+					<MenuLink toggle={toggle} to="home" ><TriangleUpIcon /> Up</MenuLink>
+					<MenuLink toggle={toggle} to="about">About</MenuLink>
+					<MenuLink toggle={toggle} to="services">Services</MenuLink>
+					<MenuLink toggle={toggle} to="portfolio">Portfolio</MenuLink>
+					<MenuLink toggle={toggle} to="contact">Contact</MenuLink>
+				</Stack>
+			</Container>
+			<Box>
+				<Container
+					as={Stack}
+					maxW={'6xl'}
+					py={4}
+					direction={{ base: 'column', md: 'row' }}
+					spacing={4}
+					justify={{ base: 'center', md: 'space-between' }}
+					align={{ base: 'center', md: 'center' }}>
+					<Text fontSize={['0.8em','1em']}>© 2021 Xavier Araque</Text>
+					<Text alignSelf={'flex-end'} fontSize={['0.8em','1em']}> <Link href="https://github.com/rendergraf/xavieraraque-react-l21-0001">Power By Xavier Araque</Link></Text>
+				</Container>
+			</Box>
+		</Box>
+	);
+}

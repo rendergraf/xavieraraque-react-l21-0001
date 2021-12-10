@@ -23,6 +23,7 @@ import {
 import { ReactElement, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { Link } from "react-scroll";
+import IMAGE from '../assets/services.png'
 
 const Jump = chakra(Link);
 
@@ -32,6 +33,7 @@ interface FeatureProps {
 	icon?: ReactElement;
 	read: string;
 }
+
 
 const Feature = ({ text, icon, iconBg, read }: FeatureProps) => {
 	const [show, setShow] = useState(false)
@@ -113,14 +115,13 @@ export default function SplitWithImage() {
 				</Stack>
 				<Flex>
 					<Image
+						boxShadow='md'
 						ref={ref}
 						transition='all .3s ease-in-out'
 						transform= {inView? 'scale(1)' : 'scale(0.98)'}
 						alt={'feature image'}
 						height='fit-content'
-						src={
-							'https://images.unsplash.com/photo-1554200876-56c2f25224fa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
-						}
+						src={ IMAGE }
 						objectFit={'contain'}
 					/>
 				</Flex>

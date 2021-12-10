@@ -5,6 +5,7 @@ import About from './components/About';
 import OurServices from './components/OurServices.tsx';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
+import ThisWebsite from './components/ThisWebsite';
 import Footer from './components/Footer'
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
             <OurServices />
             <Portfolio />
             <Contact />
+            <ThisWebsite />
             <Footer />
         </Fragment>
     );
