@@ -1,7 +1,7 @@
-import { Container, Stack, Box, Button, Heading, Text, SimpleGrid, Link, Icon } from "@chakra-ui/react"
+import { Container, Stack, Box, Button, Heading, Text, SimpleGrid, Link, Icon, Tooltip } from "@chakra-ui/react"
 import Whatsapp from "./Whatsapp"
 import { BsTelephoneFill } from 'react-icons/bs'
-import { MdMail, MdTimer,MdTimerOff } from 'react-icons/md'
+import { MdMail, MdTimer, MdTimerOff } from 'react-icons/md'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai'
 
@@ -11,23 +11,58 @@ import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/a
 } */
 
 function ifAvailable() {
-    var today = new Date().getHours();
 
+    const date = new Date();
+    const today = new Date(date.toLocaleString('en-US', { timeZone: "Europe/Madrid" })).getHours();
     if (today >= 8 && today <= 18) {
         return (
-            <Icon color="green" boxSize={6} as={MdTimer}/>
+            <Tooltip hasArrow label='Available' bg='gray.300' color='black'>          
+                <Button
+                    variant="ghost"
+                    colorScheme='gray'
+                    borderRadius='0px'
+                    size='md'
+                    color="black"
+                    onClick={(e) => {
+                        e.preventDefault();
+                        window.open('tel:+34624436094', '_blank');
+                    }}
+                    leftIcon={<BsTelephoneFill color="#1970F1" size="20px" />}>
+                    +34-624436094 <Icon color="green" boxSize={6} as={MdTimer} />
+                </Button>
+            </Tooltip>
         );
     } else {
         return (
-            <Icon color="red" boxSize={6} as={MdTimerOff}/>
+            <Tooltip hasArrow label='No Available' bg='red.600' color='white' placement='left'>
+                <Box>
+                    <Button
+                        isDisabled
+                        cursor={'not-allowed'}
+                        variant="ghost"
+                        colorScheme='gray'
+                        borderRadius='0px'
+                        size='md'
+                        color="black"
+                        onClick={(e) => {
+                            e.preventDefault();
+                            window.open('tel:+34624436094', '_blank');
+                        }}
+                        leftIcon={<BsTelephoneFill color="#1970F1" size="20px" />}>
+                        +34-624436094 <Icon color="red" boxSize={6} as={MdTimerOff} />
+                    </Button>
+                </Box>
+            </Tooltip>
+            
         );
     }
+    
 }
 
 export default function Contact() {
 
 
-    
+
 
     return (
         <Box bgColor={'gray.50'}>
@@ -39,27 +74,15 @@ export default function Contact() {
                         </Heading>
                         <Text paddingY={'1.2em'} fontSize='1.2em'>
                             Contact me if you want to request some of my services, if you are part of the recruitment team, you can do it anyway, I can send you a Cover Letter or CV in PDF.<br /><br />
-                            Please telephone calls only if it is very important or urgent, office hours from 8h to 18h <Link fontWeight={'bold'} color='#4299E1' target={"_blank"} href="https://time.is/es/Spain/">(GMT+1) Europe/Madrid.</Link> {ifAvailable()}
+                            Please telephone calls only if it is very important or urgent, office hours from 8h to 18h <Link fontWeight={'bold'} color='#4299E1' target={"_blank"} href="https://time.is/es/Spain/">(GMT+1) Europe/Madrid.</Link>
                         </Text>
                     </Stack>
-                    <Stack bgColor={'gray.200'} borderRadius={'lg'} boxShadow='md' 
+                    <Stack bgColor={'gray.200'} borderRadius={'lg'} boxShadow='md'
                         p={['1px', '2px', '10px', '0px']}
                     >
                         <Box padding={['10px 3px', '30px 30px']} align="flex-start" display="flex" flexDirection="column" justifyContent="center" height="100%">
                             <Box py={["0px", "10px"]}>
-                                <Button
-                                    variant="ghost"
-                                    colorScheme='gray'
-                                    borderRadius='0px'
-                                    size='md'
-                                    color="black"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        window.open('tel:+34624436094', '_blank');
-                                    }}
-                                    leftIcon={<BsTelephoneFill color="#1970F1" size="20px" />}>
-                                    +34-624436094 {ifAvailable()}
-                                </Button>
+                                { ifAvailable() }                                
                             </Box>
                             <Box py={["0px", "10px"]}>
                                 <Button
@@ -105,7 +128,7 @@ export default function Contact() {
                                         window.open('https://twitter.com/xavieraraque', '_blank');
                                     }}
                                     /*                   _hover={{ border: '2px solid #1C6FEB' }} */
-                                    leftIcon={<AiFillTwitterCircle  color="#1970F1" size="20px" />}>
+                                    leftIcon={<AiFillTwitterCircle color="#1970F1" size="20px" />}>
                                     Twitter/xavieraraque
                                 </Button>
                             </Box>
