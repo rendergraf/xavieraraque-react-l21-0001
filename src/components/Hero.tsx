@@ -3,7 +3,7 @@ import Particles from "react-tsparticles"
 import jsonParticles from '../utils/particles.json'
 import { ReactTypical as Typical } from '@deadcoder0904/react-typical'
 import { Link } from "react-scroll";
-import IMAGE from '../assets/hero-image.png'
+import IMAGE from '../assets/hero-image.jpg'
 import "../sass/style.scss";
 
 const LinkScroll = chakra(Link);
