@@ -51,7 +51,7 @@ export default function Portfolio() {
                         I was in charge of a group of 14 developers, between backend, 
                         frontend and QA, it was an exciting job and a professional challenge make the components work in harmony, 
                         knowing that the world of reactive applications was booming and finally we managed to make an excellent 
-                        website for one of the most important companies on the planet Macdonals.
+                        website for one of the most important companies on the world "Macdonals".
                         </Collapse>
                         <HStack justifyContent="flex-end">
                             <Button size='sm' onClick={handleTogglehm} variant='link' colorScheme='cyan' p={2}>

@@ -80,7 +80,7 @@ export default function SplitWithImage() {
 					<Text paddingY={'1.2em'} fontSize='1.2em' >
 					I focus with these three services to offer development and support services for web
 					applications recative with React.JS, please feel free to ask if your problem is not on the list,
-					<Jump to={'about'} smooth={true} duration={500} fontWeight="bold" _hover={{ textDecoration: 'underline' }} color="#4299E1" cursor="pointer"> contact</Jump> me without obligation.
+					<Jump to={'contact'} smooth={true} duration={500} fontWeight="bold" _hover={{ textDecoration: 'underline' }} color="#4299E1" cursor="pointer"> contact</Jump> me without obligation.
 					</Text>
 					<Stack
 						spacing={4}
