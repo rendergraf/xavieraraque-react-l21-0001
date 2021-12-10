@@ -88,7 +88,7 @@ export default function Profile() {
 						color="black"
 						onClick={(e) => {
 							e.preventDefault();
-							window.location.href = 'https://github.com/rendergraf';
+							window.open('https://github.com/rendergraf', '_blank');
 						}}
 					>
 						Github
@@ -101,7 +101,7 @@ export default function Profile() {
 						color="black"
 						onClick={(e) => {
 							e.preventDefault();
-							window.location.href = '#about';
+							window.open('https://www.linkedin.com/in/xavieraraque/', '_blank');
 						}}
 					>
 						LinkedIn
@@ -114,7 +114,7 @@ export default function Profile() {
 						color="black"
 						onClick={(e) => {
 							e.preventDefault();
-							window.location.href = '#about';
+							window.open('https://twitter.com/xavieraraque', '_blank');
 						}}
 					>
 						Twitter
