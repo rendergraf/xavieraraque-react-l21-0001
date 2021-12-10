@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/xavieraraque-react-l21-0001/static/css/main.d715e2e7.chunk.css",
-    "main.js": "/xavieraraque-react-l21-0001/static/js/main.55e39ea2.chunk.js",
-    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.55e39ea2.chunk.js.map",
+    "main.js": "/xavieraraque-react-l21-0001/static/js/main.cbd2df18.chunk.js",
+    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.cbd2df18.chunk.js.map",
     "runtime-main.js": "/xavieraraque-react-l21-0001/static/js/runtime-main.7e1a8488.js",
     "runtime-main.js.map": "/xavieraraque-react-l21-0001/static/js/runtime-main.7e1a8488.js.map",
     "static/js/2.606a39f3.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.606a39f3.chunk.js",
@@ -24,7 +24,7 @@
     "static/media/calendar.ad0cc9c4.png": "/xavieraraque-react-l21-0001/static/media/calendar.ad0cc9c4.png",
     "static/media/collection.3f6fd3cf.jpg": "/xavieraraque-react-l21-0001/static/media/collection.3f6fd3cf.jpg",
     "static/media/favorite.270752b6.png": "/xavieraraque-react-l21-0001/static/media/favorite.270752b6.png",
-    "static/media/hero-image.7d470118.png": "/xavieraraque-react-l21-0001/static/media/hero-image.7d470118.png",
+    "static/media/hero-image.860b7dfd.jpg": "/xavieraraque-react-l21-0001/static/media/hero-image.860b7dfd.jpg",
     "static/media/home.bcc6f8da.png": "/xavieraraque-react-l21-0001/static/media/home.bcc6f8da.png",
     "static/media/press.438e65c0.png": "/xavieraraque-react-l21-0001/static/media/press.438e65c0.png",
     "static/media/services.6d4062d7.png": "/xavieraraque-react-l21-0001/static/media/services.6d4062d7.png"
@@ -33,6 +33,6 @@
     "static/js/runtime-main.7e1a8488.js",
     "static/js/2.606a39f3.chunk.js",
     "static/css/main.d715e2e7.chunk.css",
-    "static/js/main.55e39ea2.chunk.js"
+    "static/js/main.cbd2df18.chunk.js"
   ]
 }
