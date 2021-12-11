@@ -142,7 +142,7 @@ export default function Contact() {
                                     }}
                                     /*                   _hover={{ border: '2px solid #1C6FEB' }} */
                                     leftIcon={<AiFillGithub color="#1970F1" size="20px" />}>
-                                    github.rendergraf
+                                    Github.rendergraf
                                 </Button>
                             </Box>
                             <Box py={["0px", "10px"]}>

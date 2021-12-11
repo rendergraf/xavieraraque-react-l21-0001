@@ -1,4 +1,5 @@
-import { Fragment } from 'react';
+import { Fragment, Suspense } from 'react';
+import { Spinner } from '@chakra-ui/react'
 import Header from "./components/Header";
 import Hero from './components/Hero';
 import About from './components/About';
@@ -11,8 +12,10 @@ import Footer from './components/Footer'
 export default function App() {
     return (
         <Fragment>
-            <Header />
-            <Hero />
+            <Suspense fallback={<Spinner />}>
+                <Header />
+                <Hero />
+            </Suspense>
             <About />
             <OurServices />
             <Portfolio />
