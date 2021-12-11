@@ -245,16 +245,16 @@ export default function About() {
                                 Software Developer
                             </Heading>
                             <Text paddingY={'1.2em'} fontSize='1.2em'>
-                                I'm a full-stack engineer with over 12 years of experience in web development,
+                                I am a full-stack engineer with over 12 years of experience in web development,
                                 managing all aspects of the development process.<br /><br />
 
                                 I worked on 20+ projects and solved complex problems in various industries including marketing,
-                                eCommerce, technology, museums, jewelry.<br /><br />
+                                eCommerce, technology, museums and jewelry.<br /><br />
                                 
-                                I holds a degree Bachelor in Computer Science and Engineering.
-                                Me specialties include JavaScript, React, Redux, Node, TypeScript, HTML5, CSS3, SASS, PHP, REST API, Express, MongoDB, MySQL, and AWS Cloud services.<br /><br />
+                                I hold a Bachelor degree in Computer Science and Engineering.
+                                Me specialties include JavaScript, React, Redux, Node, TypeScript, HTML5, CSS3, SASS, PHP, REST API, Express, MongoDB, MySQL and AWS Cloud services.<br /><br />
 
-                                I ready for an opportunity to use his skills to grow your revenue exponentially with an excellent web product.
+                                I am ready for an opportunity to use this skills to grow your revenue exponentially with an excellent web product.
                             </Text>
 
                         </Stack>

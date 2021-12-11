@@ -81,9 +81,9 @@ export default function SplitWithImage() {
 					<Stack spacing={4}>
 						<Heading color={'white'} textAlign={['center', 'left']}>Services</Heading>
 						<Text color={'white'} fontWeight={'bold'} paddingY={'1.2em'} fontSize='1.2em' >
-						I focus with these three services to offer development and support services for web
-						applications recative with React.JS, please feel free to ask if your problem is not on the list,
-						<Jump href={'#'} to={'contact'} smooth={true} duration={500} textDecor={'underline'} fontWeight="bold" _hover={{ textDecoration: 'underline' }} color="white" cursor="pointer"> contact</Jump> me without obligation.
+						I focus on these three services to offer development and support services for 
+						reactive web applications with React.JS. Please feel free to ask questions if your problem is not on the list. 
+						<Jump href={'#'} to={'contact'} smooth={true} duration={500} textDecor={'underline'} fontWeight="bold" _hover={{ textDecoration: 'underline' }} color="white" cursor="pointer"> Contact</Jump> me without compromise.
 						</Text>
 						<Stack
 							spacing={4}
@@ -98,7 +98,7 @@ export default function SplitWithImage() {
 								}
 								iconBg={useColorModeValue('cyan.300', 'yellow.900')}
 								text={'Web Development'}
-								read={"If you want to make sure the scale of your project matches your ambitions for the future. I will use React and others library for build you web,  I will ensure that your project is built to grow from the very beginning."}
+								read={"If you want to make sure the scale of your project matches your ambitions for the future, I will use React and other libraries to build your web. I will ensure that your project is built to grow from the very beginning."}
 							/>							
 							<Feature
 								icon={<Icon as={MdImportantDevices} color={'green.500'} w={5} h={5} />}
@@ -112,7 +112,7 @@ export default function SplitWithImage() {
 								}
 								iconBg={useColorModeValue('purple.100', 'purple.900')}
 								text={'Technical support'}
-								read={"You want advice to start a new project or you want to hire fixed hours per month to maintain or update your projects, we can help you."}
+								read={"If you are looking for advice to start a new project or you want to hire fixed hours per month to maintain or update your projects, we can help you."}
 							/>
 						</Stack>
 					</Stack>

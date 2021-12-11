@@ -70,8 +70,8 @@ export default function Contact() {
                             Contact
                         </Heading>
                         <Text paddingY={'1.2em'} fontSize='1.2em'>
-                            Contact me if you want to request some of my services, if you are part of the recruitment team, you can do it anyway, I can send you a Cover Letter or CV in PDF.<br /><br />
-                            Please telephone calls only if it is very important or urgent, office hours from 8h to 18h <Link fontWeight={'bold'} color='#4299E1' target={"_blank"} href="https://time.is/es/Spain/">(UTC+1) Europe/Madrid.</Link>
+                            Contact me if you want to request some of my services. If you are part of the recruitment team, you can do it anyway, I can send you a Cover Letter or a CV in PDF version.<br /><br />
+                            Please important or urgent calls only. Office hours are from 8h to 18h <Link fontWeight={'bold'} color='#4299E1' target={"_blank"} href="https://time.is/es/Spain/">(UTC+1) Europe/Madrid.</Link>
                         </Text>
                     </Stack>
                     <Stack bgColor={'gray.200'} borderRadius={'lg'} boxShadow='md'

@@ -8,13 +8,18 @@ export default function ThisWebsite() {
                 About this website
             </Text>
             <Text py={5}>
-            I know this yellow section looks a bit ugly, but my intention is to take your attention so that you read this which is very important.
+            I know this yellow section looks a bit ugly,
+            but my intention is to take your attention so that you read this, which is very important.
             </Text>
             <Text>
-            This site was created to be freely distributed, you can use this code freely for its own use, the only condition is not to delete the Power By Xavier Araque and the url that redirects you to Github, as well as when you publish the site on social networks do reference to Xavier Araque as author.
+            This site was created to be freely distributed. You can use this code freely for your own use.<br />
+            The conditions are the following,<br />
+            do not delete the Power By Xavier Araque and the URL that redirects you to Github<br />
+
+            if you publish the site on social networks, include the reference by Xavier Araque as the author
             </Text>
             <Text py={5} fontWeight={'bold'}>
-            For the creation of this website I use:
+            For the creation of this website I used
             </Text>
             <UnorderedList>
                 <ListItem>React</ListItem>
@@ -28,7 +33,7 @@ export default function ThisWebsite() {
                 <ListItem>react-whatsapp</ListItem>
             </UnorderedList>
             <Text py={5} fontWeight={'bold'}>
-            The programming language used was.
+            The programming language used was
             </Text>
             <UnorderedList>
                 <ListItem>TypeScript</ListItem>
@@ -48,7 +53,7 @@ export default function ThisWebsite() {
                 <Link href="https://rendergraf.github.io/xavieraraque-react-l21-0001/">https://rendergraf.github.io/xavieraraque-react-l21-0001/</Link>
             </Text>
             <Text py={5} fontWeight={'bold'}>
-                And enjoy!
+                Enjoy!
             </Text>
         </Container>
         </Box>

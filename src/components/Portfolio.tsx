@@ -46,13 +46,13 @@ export default function Portfolio() {
                     <Text textAlign={['center', 'left']} color={'cyan.600'} fontWeight={'bold'}>PORTFOLIO</Text>
                     <Box padding={'1em 0 0 0'} fontSize='1.2em'>
                         <Collapse startingHeight={200} in={showhm}>
-                        I worked as Technical Leader and Front-end at <Link fontWeight="bold" color={'cyan.600'} href='https://www.teravisiontech.com/' isExternal>TeravisionTech</Link> for the creation of the new HappyMeal.com site.<br /><br />
+                        I worked as a Technical Leader and Front-end at <Link fontWeight="bold" color={'cyan.600'} href='https://www.teravisiontech.com/' isExternal>TeravisionTech</Link> for the creation of the new HappyMeal.com site.<br /><br />
                         My proposal was to make a new wesite made with cutting-edge technologies on a Stack MEAN, Node.js, 
                         Angular MongoDB and Express. <br /><br />
                         I was in charge of a group of 14 developers, between backend, 
-                        frontend and QA, it was an exciting job and a professional challenge make the components work in harmony, 
+                        frontend and QA. It was an exciting job and a professional challenge made the components work in harmony, 
                         knowing that the world of reactive applications was booming and finally we managed to make an excellent 
-                        website for one of the most important companies on the world "McDonald's".
+                        website for one of the most important companies on the world, "McDonald's".
                         </Collapse>
                         <HStack justifyContent="flex-end">
                             <Button size='sm' onClick={handleTogglehm} variant='link' colorScheme='cyan' p={2}>
@@ -126,15 +126,15 @@ export default function Portfolio() {
                     <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: Shaker Museum</Text>
                     <Box paddingY={'1.2em'} fontSize='1.2em'>
                         <Collapse startingHeight={200} in={showsm}>
-                        One of the projects that I liked the most was working on the development of the new site for Shaker Museum, I was hired as an outsourcer by <Link fontWeight="bold" color={'cyan.600'} href='https://studioanalogous.com/' isExternal>Studio Analogous</Link> for this challenge.<br /><br />
+                        One of the projects that I liked the most was working on the development of the new site for Shaker Museum. I was hired as an outsourcer by <Link fontWeight="bold" color={'cyan.600'} href='https://studioanalogous.com/' isExternal>Studio Analogous</Link> for this challenge.<br /><br />
 
-                        The idea was to catalog more than 18K objects, capable of performing super fast searches in its collection, we used Elastic Search replicating an API and creating a query view with Vue.JS<br /><br />
+                        The idea was to catalog more than 18K objects, capable of performing super fast searches in its collection. We used Elastic Search replicating an API and creating a query view with Vue.JS<br /><br />
 
-                        The client's need to have a website next to his catalog was the prevailing need, for this we made an integration of Wordrpess+Vue.JS and the result was great, the client was satisfied since he can maintain by himself, his systems of news, blog, calendars and internal pages as well as its collection catalog system.<br /><br />
+                        The client's need to have a website next to his catalog was the prevailing need. Therefore, we made an integration of Wordrpess+Vue.JS and the result was great. The client was satisfied since he could mantain his systems of news, blog, calendars and internal pages as well as its collection catalog system, by himself.<br /><br />
 
-                        You can see for yourself by doing a search in the <Link fontWeight="bold" color={'cyan.600'} href='https://www.shakermuseum.us/search/' isExternal>Collection</Link> section and try for example searching for the word <Link fontWeight="bold" color={'cyan.600'} href='https://www.shakermuseum.us/search/#/?q=basket' isExternal>"basket"</Link>.<br /><br />
+                        You can see for yourself by searching in the <Link fontWeight="bold" color={'cyan.600'} href='https://www.shakermuseum.us/search/' isExternal>Collection</Link> section, for example, the word <Link fontWeight="bold" color={'cyan.600'} href='https://www.shakermuseum.us/search/#/?q=basket' isExternal>"basket"</Link>.<br /><br />
 
-                        It was a pleasure for me to have worked on this wonderful project with the Studio Analogous and Shaker Museum team, I learned many things from this experience.
+                        It was a pleasure for me to have worked on this wonderful project with the Studio Analogous and Shaker Museum team. I learned many things from this experience.
                         </Collapse>
                         <HStack justifyContent="flex-end">
                             <Button size='sm' onClick={handleTogglesm} variant='link' colorScheme='cyan' p={2}>
