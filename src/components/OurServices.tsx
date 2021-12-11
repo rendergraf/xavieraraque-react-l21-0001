@@ -75,7 +75,7 @@ export default function SplitWithImage() {
 	  });
 
 	return (
-		<Box bgColor={'cyan.500'} transform={'skewy(-4deg)'} paddingTop={'1em'}>
+		<Box bgColor={'cyan.500'} transform={'skewy(-4deg)'} paddingTop={['1em', '3em']} paddingBottom={['1em', '4em']}>
 			<Container transform={'skewy(4deg)'} id="services" maxW='container.lg' py={[8,20]} px={[5,5]} minH={['100vh', 'auto']}>
 				<SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
 					<Stack spacing={4}>

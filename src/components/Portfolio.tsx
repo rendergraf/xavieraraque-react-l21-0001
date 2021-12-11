@@ -38,7 +38,7 @@ export default function Portfolio() {
     const sm:string[] = [ sm01, sm02, sm03, sm04, sm05, sm06 ];
     
     return (
-        <Container id="portfolio" maxW='container.lg' minH={['100vh', 'auto']} paddingTop={'2em'} marginTop={'1em'}>
+        <Container id="portfolio" maxW='container.lg' minH={['100vh', 'auto']} paddingTop={['2em', '1em']} marginTop={['1em', '3em']}>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} py={[8, 20]} >
                 <Stack>
                     <Heading textAlign={['center', 'left']}>HappyMeal.com</Heading>
