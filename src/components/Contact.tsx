@@ -61,11 +61,8 @@ function ifAvailable() {
 
 export default function Contact() {
 
-
-
-
     return (
-        <Box bgColor={'gray.50'}>
+        <Box bgColor={'gray.50'} paddingBottom='15em'>
             <Container id="contact" maxW='container.lg' py={[8, 20]} minH={['100vh', 'auto']}>
                 <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10}>
                     <Stack spacing={4}>

@@ -20,6 +20,7 @@ interface MenuLinksProps {
 export default function SmallCentered({ toggle, isOpen }: MenuLinksProps) {
 	return (
 		<Box
+			paddingTop='20em'
 			borderTopWidth={1}
 			borderStyle={'solid'}
 			borderColor={useColorModeValue('gray.200', 'gray.700')}
@@ -53,7 +54,7 @@ export default function SmallCentered({ toggle, isOpen }: MenuLinksProps) {
 					justify={{ base: 'center', md: 'space-between' }}
 					align={{ base: 'center', md: 'center' }}>
 					<Text fontSize={['0.8em','1em']}>© 2021 Xavier Araque</Text>
-					<Text alignSelf={'flex-end'} fontSize={['0.8em','1em']}> <Link href="https://github.com/rendergraf/xavieraraque-react-l21-0001">Power By Xavier Araque</Link></Text>
+					<Text fontWeight={'bold'} alignSelf={['center', 'flex-end']} fontSize={['0.8em','1em']}> <Link href="https://github.com/rendergraf/xavieraraque-react-l21-0001">Power By Xavier Araque</Link></Text>
 				</Container>
 			</Box>
 		</Box>

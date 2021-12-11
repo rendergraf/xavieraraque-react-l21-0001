@@ -2,9 +2,9 @@ import { Container, Text, UnorderedList, ListItem, Link, Box } from "@chakra-ui/
 
 export default function ThisWebsite() {
     return (
-        <Box bgColor={'yellow.100'}>
-        <Container maxW='container.lg' py={'20px'}>
-            <Text fontWeight={'bold'} fontSize={['1.5em']} align={'center'} py={5}>
+        <Box bgColor={'yellow.100'} transform={'skewy(-4deg)'} marginTop='-10em' marginBottom='-15em'>
+        <Container maxW='container.lg' transform={'skewy(4deg)'}>
+            <Text fontWeight={'bold'} fontSize={['1.5em']} align={'center'} padding={'3em 0 1em 0'}>
                 About this website
             </Text>
             <Text py={5}>

@@ -38,14 +38,15 @@ export default function Portfolio() {
     const sm:string[] = [ sm01, sm02, sm03, sm04, sm05, sm06 ];
     
     return (
-        <Container id="portfolio" maxW='container.lg' minH={['100vh', 'auto']}>
+        <Container id="portfolio" maxW='container.lg' minH={['100vh', 'auto']} paddingTop={'2em'} marginTop={'1em'}>
             <SimpleGrid columns={{ base: 1, md: 2 }} spacing={10} py={[8, 20]} >
                 <Stack>
                     <Heading textAlign={['center', 'left']}>HappyMeal.com</Heading>
                     <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: McDonald's</Text>
-                    <Box paddingY={'1.2em'} fontSize='1.2em'>
+                    <Text textAlign={['center', 'left']} color={'cyan.600'} fontWeight={'bold'}>PORTFOLIO</Text>
+                    <Box padding={'1em 0 0 0'} fontSize='1.2em'>
                         <Collapse startingHeight={200} in={showhm}>
-                        I worked as Technical Leader and Front-end at <Link fontWeight="bold" color="#4299E1" href='https://www.teravisiontech.com/' isExternal>TeravisionTech</Link> for the creation of the new HappyMeal.com site.<br /><br />
+                        I worked as Technical Leader and Front-end at <Link fontWeight="bold" color={'cyan.600'} href='https://www.teravisiontech.com/' isExternal>TeravisionTech</Link> for the creation of the new HappyMeal.com site.<br /><br />
                         My proposal was to make a new wesite made with cutting-edge technologies on a Stack MEAN, Node.js, 
                         Angular MongoDB and Express. <br /><br />
                         I was in charge of a group of 14 developers, between backend, 
@@ -79,37 +80,37 @@ export default function Portfolio() {
                     <HStack justifyContent="space-between">
                         <Tooltip borderRadius="5px" hasArrow label='Angular.JS' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={IoLogoAngular} boxSize={[10, 12]} color='#dd0031' />
+                                <Icon as={IoLogoAngular} boxSize={[9, 12]} color='#dd0031' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Node.JS' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaNodeJs} boxSize={[10, 12]} color='#569f43' />                        
+                                <Icon as={FaNodeJs} boxSize={[9, 12]} color='#569f43' />                        
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='MongoDB' bg='gray.600' color='white' placement='top'>
                             <Box>                     
-                                <Icon as={DiMongodb} boxSize={[10, 12]} color='#4ca449' />
+                                <Icon as={DiMongodb} boxSize={[9, 12]} color='#4ca449' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Bootstrap' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaBootstrap} boxSize={[10, 12]} color='#7811f2' />
+                                <Icon as={FaBootstrap} boxSize={[9, 12]} color='#7811f2' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Sass' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaSass} boxSize={[10, 12]} color='#c76494' />
+                                <Icon as={FaSass} boxSize={[9, 12]} color='#c76494' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='HTML5' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaHtml5} boxSize={[10, 12]} color='#ea6229' />
+                                <Icon as={FaHtml5} boxSize={[9, 12]} color='#ea6229' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='CSS3' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={IoLogoCss3} boxSize={[10, 12]} color='#254bdd' />                            
+                                <Icon as={IoLogoCss3} boxSize={[9, 12]} color='#254bdd' />                            
                             </Box>
                         </Tooltip>
                     </HStack>
@@ -125,13 +126,13 @@ export default function Portfolio() {
                     <Text textAlign={['center', 'left']} fontWeight="bold" color={'gray.900'} fontSize={'lg'}>Client: Shaker Museum</Text>
                     <Box paddingY={'1.2em'} fontSize='1.2em'>
                         <Collapse startingHeight={200} in={showsm}>
-                        One of the projects that I liked the most was working on the development of the new site for Shaker Museum, I was hired as an outsourcer by <Link fontWeight="bold" color="#4299E1" href='https://studioanalogous.com/' isExternal>Studio Analogous</Link> for this challenge.<br /><br />
+                        One of the projects that I liked the most was working on the development of the new site for Shaker Museum, I was hired as an outsourcer by <Link fontWeight="bold" color={'cyan.600'} href='https://studioanalogous.com/' isExternal>Studio Analogous</Link> for this challenge.<br /><br />
 
                         The idea was to catalog more than 18K objects, capable of performing super fast searches in its collection, we used Elastic Search replicating an API and creating a query view with Vue.JS<br /><br />
 
                         The client's need to have a website next to his catalog was the prevailing need, for this we made an integration of Wordrpess+Vue.JS and the result was great, the client was satisfied since he can maintain by himself, his systems of news, blog, calendars and internal pages as well as its collection catalog system.<br /><br />
 
-                        You can see for yourself by doing a search in the <Link fontWeight="bold" color="#4299E1" href='https://www.shakermuseum.us/search/' isExternal>Collection</Link> section and try for example searching for the word <Link fontWeight="bold" color="#4299E1" href='https://www.shakermuseum.us/search/#/?q=basket' isExternal>"basket"</Link>.<br /><br />
+                        You can see for yourself by doing a search in the <Link fontWeight="bold" color={'cyan.600'} href='https://www.shakermuseum.us/search/' isExternal>Collection</Link> section and try for example searching for the word <Link fontWeight="bold" color={'cyan.600'} href='https://www.shakermuseum.us/search/#/?q=basket' isExternal>"basket"</Link>.<br /><br />
 
                         It was a pleasure for me to have worked on this wonderful project with the Studio Analogous and Shaker Museum team, I learned many things from this experience.
                         </Collapse>
@@ -161,37 +162,37 @@ export default function Portfolio() {
                     <HStack justifyContent="space-between">
                         <Tooltip borderRadius="5px" hasArrow label='Wordpress' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={IoLogoWordpress} boxSize={[10, 12]} color='#32373c' />
+                                <Icon as={IoLogoWordpress} boxSize={[9, 12]} color='#32373c' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Vue.JS' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaVuejs} boxSize={[10, 12]} color='#3fb27f' />                        
+                                <Icon as={FaVuejs} boxSize={[9, 12]} color='#3fb27f' />                        
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Elastic Search' bg='gray.600' color='white' placement='top'>
                             <Box>                     
-                                <Icon as={SiElasticsearch} boxSize={[10, 12]} color='#24b5ac' />
+                                <Icon as={SiElasticsearch} boxSize={[9, 12]} color='#24b5ac' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Bootstrap' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaBootstrap} boxSize={[10, 12]} color='#7811f2' />
+                                <Icon as={FaBootstrap} boxSize={[9, 12]} color='#7811f2' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='Sass' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaSass} boxSize={[10, 12]} color='#c76494' />
+                                <Icon as={FaSass} boxSize={[9, 12]} color='#c76494' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='HTML5' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={FaHtml5} boxSize={[10, 12]} color='#ea6229' />
+                                <Icon as={FaHtml5} boxSize={[9, 12]} color='#ea6229' />
                             </Box>
                         </Tooltip>
                         <Tooltip borderRadius="5px" hasArrow label='CSS3' bg='gray.600' color='white' placement='top'>
                             <Box>
-                                <Icon as={IoLogoCss3} boxSize={[10, 12]} color='#254bdd' />                            
+                                <Icon as={IoLogoCss3} boxSize={[9, 12]} color='#254bdd' />                            
                             </Box>
                         </Tooltip>
                     </HStack>
