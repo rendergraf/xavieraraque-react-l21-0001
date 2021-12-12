@@ -11,7 +11,9 @@ interface MenuLinksProps {
 }
 
 const MenuLinks = ({ toggle, isOpen }: MenuLinksProps ) => {
+
     const scroll = ScrollFunction();
+    
     return (
         <Box
             className="nav-bar__box"
