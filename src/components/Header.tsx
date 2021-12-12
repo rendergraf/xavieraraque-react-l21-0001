@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import { Flex, useBreakpointValue } from "@chakra-ui/react";
-import MenuToggle from "./MenuToggle";
-import MenuLinks from "./MenuLinks";
-import Logo from "./Logo";
+import { MenuToggle, MenuLinks, Logo } from './'
 import '../sass/header.scss'
 
 export function ScrollFunction() {

@@ -1,5 +1,5 @@
 import { Container, Stack, Box, Button, Heading, Text, SimpleGrid, Link, Icon, Tooltip } from "@chakra-ui/react"
-import Whatsapp from "./Whatsapp"
+import { Whatsapp } from "./"
 import { BsTelephoneFill } from 'react-icons/bs'
 import { MdMail, MdTimer, MdTimerOff } from 'react-icons/md'
 import { FaMapMarkerAlt } from 'react-icons/fa'

@@ -20,7 +20,6 @@ export default function Profile() {
 		threshold:1.0
 	  });
 
-	  
 	return (
 		<Center p='40px 0 10px 0'>
 			<Box

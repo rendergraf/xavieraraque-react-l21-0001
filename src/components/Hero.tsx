@@ -36,6 +36,7 @@ const Hero = () => {
         }}
         >
         <Particles
+            style={{overflow: "hidden"}}
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}

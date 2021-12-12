@@ -4,7 +4,6 @@ import { IoLogoWhatsapp } from 'react-icons/io'
 
 const Chat = chakra(ReactWhatsapp)
 
-
 export default function Whatsapp() {
     return (
         <Chat
