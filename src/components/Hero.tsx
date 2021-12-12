@@ -19,6 +19,7 @@ const Hero = () => {
         w="100%" h="100vh"
         loading='eager'
         overflow='hidden'
+        backgroundColor={'#000000'}
         backgroundImage={IMAGE}
         backgroundPosition="center"
         backgroundRepeat="no-repeat"
