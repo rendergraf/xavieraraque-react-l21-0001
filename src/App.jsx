@@ -1,6 +1,6 @@
 import React, { Fragment, Suspense } from 'react';
 import { ScaleFade, Center, Spinner } from '@chakra-ui/react'
-import { About, OurServices, Contact, ThisWebsite } from './components'
+import { About, OurServices, Contact, ThisWebsite, Footer } from './components'
 
 const Header = React.lazy(() => import("./components/Header"));
 const Hero = React.lazy(() => import("./components/Hero"));
@@ -41,7 +41,7 @@ export default function App() {
             </Suspense>
             <Contact />
             <ThisWebsite />
-  {/*           <Footer /> */}
+            <Footer />
         </Fragment>
     );
 }
