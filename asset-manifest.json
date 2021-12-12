@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/xavieraraque-react-l21-0001/static/css/main.5612c437.chunk.css",
-    "main.js": "/xavieraraque-react-l21-0001/static/js/main.72289a83.chunk.js",
-    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.72289a83.chunk.js.map",
-    "runtime-main.js": "/xavieraraque-react-l21-0001/static/js/runtime-main.94f4f21c.js",
-    "runtime-main.js.map": "/xavieraraque-react-l21-0001/static/js/runtime-main.94f4f21c.js.map",
-    "static/js/2.3e232a45.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.3e232a45.chunk.js",
-    "static/js/2.3e232a45.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.3e232a45.chunk.js.map",
-    "static/js/3.2dd7d084.chunk.js": "/xavieraraque-react-l21-0001/static/js/3.2dd7d084.chunk.js",
-    "static/js/3.2dd7d084.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/3.2dd7d084.chunk.js.map",
-    "static/js/4.8cf10b9d.chunk.js": "/xavieraraque-react-l21-0001/static/js/4.8cf10b9d.chunk.js",
-    "static/js/4.8cf10b9d.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/4.8cf10b9d.chunk.js.map",
-    "static/js/5.2934408e.chunk.js": "/xavieraraque-react-l21-0001/static/js/5.2934408e.chunk.js",
-    "static/js/5.2934408e.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/5.2934408e.chunk.js.map",
-    "static/js/6.7a33104d.chunk.js": "/xavieraraque-react-l21-0001/static/js/6.7a33104d.chunk.js",
-    "static/js/6.7a33104d.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/6.7a33104d.chunk.js.map",
+    "main.js": "/xavieraraque-react-l21-0001/static/js/main.f6b219f6.chunk.js",
+    "main.js.map": "/xavieraraque-react-l21-0001/static/js/main.f6b219f6.chunk.js.map",
+    "runtime-main.js": "/xavieraraque-react-l21-0001/static/js/runtime-main.937ce8c6.js",
+    "runtime-main.js.map": "/xavieraraque-react-l21-0001/static/js/runtime-main.937ce8c6.js.map",
+    "static/js/2.20cb7e45.chunk.js": "/xavieraraque-react-l21-0001/static/js/2.20cb7e45.chunk.js",
+    "static/js/2.20cb7e45.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/2.20cb7e45.chunk.js.map",
+    "static/js/3.5a71c039.chunk.js": "/xavieraraque-react-l21-0001/static/js/3.5a71c039.chunk.js",
+    "static/js/3.5a71c039.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/3.5a71c039.chunk.js.map",
+    "static/js/4.ee8ebc79.chunk.js": "/xavieraraque-react-l21-0001/static/js/4.ee8ebc79.chunk.js",
+    "static/js/4.ee8ebc79.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/4.ee8ebc79.chunk.js.map",
+    "static/js/5.34665739.chunk.js": "/xavieraraque-react-l21-0001/static/js/5.34665739.chunk.js",
+    "static/js/5.34665739.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/5.34665739.chunk.js.map",
+    "static/js/6.e65d6865.chunk.js": "/xavieraraque-react-l21-0001/static/js/6.e65d6865.chunk.js",
+    "static/js/6.e65d6865.chunk.js.map": "/xavieraraque-react-l21-0001/static/js/6.e65d6865.chunk.js.map",
     "index.html": "/xavieraraque-react-l21-0001/index.html",
     "static/css/main.5612c437.chunk.css.map": "/xavieraraque-react-l21-0001/static/css/main.5612c437.chunk.css.map",
-    "static/js/3.2dd7d084.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/3.2dd7d084.chunk.js.LICENSE.txt",
-    "static/js/4.8cf10b9d.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/4.8cf10b9d.chunk.js.LICENSE.txt",
+    "static/js/3.5a71c039.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/3.5a71c039.chunk.js.LICENSE.txt",
+    "static/js/4.ee8ebc79.chunk.js.LICENSE.txt": "/xavieraraque-react-l21-0001/static/js/4.ee8ebc79.chunk.js.LICENSE.txt",
     "static/media/fonts.scss": "/xavieraraque-react-l21-0001/static/media/GothamMedium.ed34690d.ttf",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.430f13c9.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.430f13c9.jpg",
     "static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.dad3e2c1.jpg": "/xavieraraque-react-l21-0001/static/media/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.dad3e2c1.jpg",
@@ -39,9 +39,9 @@
     "static/media/services.6d4062d7.png": "/xavieraraque-react-l21-0001/static/media/services.6d4062d7.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.94f4f21c.js",
-    "static/js/3.2dd7d084.chunk.js",
+    "static/js/runtime-main.937ce8c6.js",
+    "static/js/3.5a71c039.chunk.js",
     "static/css/main.5612c437.chunk.css",
-    "static/js/main.72289a83.chunk.js"
+    "static/js/main.f6b219f6.chunk.js"
   ]
 }
