@@ -1,4 +1,5 @@
 import { Container, Stack, Box, Button, Heading, Text, SimpleGrid, Link, Icon, Tooltip } from "@chakra-ui/react"
+import { useInView } from 'react-intersection-observer';
 import { Whatsapp } from "./"
 import { BsTelephoneFill } from 'react-icons/bs'
 import { MdMail, MdTimer, MdTimerOff } from 'react-icons/md'
@@ -6,12 +7,7 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 import { AiFillGithub, AiFillLinkedin, AiFillTwitterCircle } from 'react-icons/ai'
 
 
-/* interface lTime {
-    st: String
-} */
-
 function ifAvailable() {
-
     const date = new Date();
     const today = new Date(date.toLocaleString('en-US', { timeZone: "Europe/Madrid" })).getHours();
     if (today >= 8 && today <= 18) {
@@ -61,6 +57,12 @@ function ifAvailable() {
 
 export default function Contact() {
 
+    const { ref, inView } = useInView({
+		root: null,
+		rootMargin: "0px",
+		threshold:1.0
+	  });
+
     return (
         <Box bgColor={'gray.50'} paddingBottom='15em'>
             <Container id="contact" maxW='container.lg' py={[8, 20]} minH={['100vh', 'auto']}>
@@ -77,7 +79,16 @@ export default function Contact() {
                     <Stack bgColor={'gray.200'} borderRadius={'lg'} boxShadow='md'
                         p={['1px', '2px', '10px', '0px']}
                     >
-                        <Box padding={['10px 3px', '30px 30px']} align="flex-start" display="flex" flexDirection="column" justifyContent="center" height="100%">
+                        <Box
+                            ref={ref} 
+                            transition='all .3s ease-in-out'
+                            transform= {inView ? 'scale(1)' : 'scale(0.98)'}
+                            padding={['10px 3px', '30px 30px']}
+                            align="flex-start"
+                            display="flex"
+                            flexDirection="column"
+                            justifyContent="center"
+                            height="100%">
                             <Box py={["0px", "10px"]}>
                                 { ifAvailable() }                                
                             </Box>

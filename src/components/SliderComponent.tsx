@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Slider from 'react-slick';
+import { useInView } from 'react-intersection-observer';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react"
 
@@ -21,13 +22,23 @@ interface SliderComponentProps {
 
 export function SliderComponent({ images }: SliderComponentProps) {
 
+    const { ref, inView } = useInView({
+		root: null,
+		rootMargin: "0px",
+		threshold:1.0
+	  });
+
     const [slider, setSlider] = useState<Slider | null>(null);
 
     const top = useBreakpointValue({ base: '308px', md: '475px' });
     const side = useBreakpointValue({ base: '5px', md: '5px' });
 
     return (
-        <Box boxShadow='md'
+        <Box
+            boxShadow='md'
+            ref={ref}
+            transition='all .3s ease-in-out'
+			transform= {inView ? 'scale(1)' : 'scale(0.98)'}
             position={'relative'}
             height={['333px', '500px']}
             width={'full'}
