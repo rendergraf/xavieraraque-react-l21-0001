@@ -11,7 +11,6 @@ import "../sass/style.scss";
 import hm01 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_1.jpg'
 import hm02 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_2.jpg'
 import hm03 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_3.jpg'
-import hm04 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_4.jpg'
 import hm05 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_5.jpg'
 import hm06 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_6.jpg'
 import hm07 from '../assets/happymealt/HM.com_HelloKitty_MonsterJam_Home_2048x1536_R1_7.jpg'
@@ -34,7 +33,7 @@ export default function Portfolio() {
     const [showsm, setShowsm] = useState(false)
     const handleTogglesm = () => setShowsm(!showsm)
 
-    const hm:string[] = [ hm01, hm02, hm03, hm04, hm05, hm06, hm07, hm08];
+    const hm:string[] = [ hm01, hm02, hm03, hm05, hm06, hm07, hm08];
     const sm:string[] = [ sm01, sm02, sm03, sm04, sm05, sm06 ];
     
     return (
